@@ -1,23 +1,19 @@
-import Header from "@/component/header/Header";
-import HomeMain1 from "@/component/main/HomeMain1";
-import SearchModal from "@/component/modal/SearchModal";
-import VideoModal from "@/component/modal/VideoModal";
-import { ToastContainer } from "react-toastify";
-import type { Metadata } from 'next'
- 
+import Header2 from '@/component/header/Header2';
+import HomeMain5 from '@/component/main/HomeMain5';
+import SearchModal from '@/component/modal/SearchModal';
+import type { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: 'Cafeu Home Page 1',
   description: 'Developed by Azizur Rahman',
-}
- 
+};
+
 export default function Home() {
   return (
     <div className="wrapper">
-      <Header style={'header-1'}/>
-      <HomeMain1/>
-      <VideoModal/>
-      <SearchModal style="default"/>
-      <ToastContainer/>
+      <Header2 theme="theme-3" logo="img/logo/logo-3.png" />
+      <HomeMain5 />
+      <SearchModal style="yellow-theme" />
     </div>
-  )
+  );
 }

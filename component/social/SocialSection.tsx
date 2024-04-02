@@ -1,21 +1,26 @@
-import React from 'react'
+import React from 'react';
 interface SocialProps {
-  style: string
+  style: string;
 }
-const SocialSection:React.FC<SocialProps> = ({style}) => {
+const SocialSection: React.FC<SocialProps> = ({ style }) => {
   return (
     <div className={`social-sec ${style}`}>
-        <div className="right-social">
-            <ul className="right-social-ul">
-                <li><a href="#" className="share-link">Facebook</a></li>
-
-                <li><a href="#" className="share-link">Twitter</a></li>
-
-                <li><a href="#" className="share-link">Instagram</a></li>
-            </ul>
-        </div>
+      <div className="right-social">
+        <ul className="right-social-ul">
+          <li>
+            <a href="#" className="share-link">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#" className="share-link">
+              RSS
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SocialSection
+export default SocialSection;

@@ -1227,7 +1227,7 @@ ul.right-social-ul li {
 ========================== */
 
 .sm-title {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Lobster Two", cursive;
   color: #cc3333;
   font-weight: 500;
@@ -2689,7 +2689,10 @@ img.app-tow {
 .avail-inner {
   width: 100%;
   position: relative;
-  margin-top: 20px;
+}
+
+.avail-inner p {
+  color: #1F1F1B;
 }
 
 .note-head {
@@ -3730,7 +3733,7 @@ thead.product-table {
 }
 
 .header.header-2 .logo {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .header.header-2 {
@@ -5330,8 +5333,13 @@ ul.service-list.mt-0 {
   margin-bottom: 0;
 }
 
-.note-ul li p {
+.note-ul li p{
   margin-bottom: 0;
+  color: initial;
+}
+
+li.note-li span {
+  color: #fff;
 }
 
 .right-menu-icon ul {
@@ -5981,13 +5989,24 @@ span.sm-title.sm-title2 {
   display: inline-block;
   padding: 0 25px;
   border-radius: 3px;
-  color: #fff;
+  color: #000000;
   margin-right: 20px;
 }
 
 .cb-slider-button:hover {
   background-color: #fff;
   color: #292929;
+}
+
+.second-button {
+  background-color: transparent;
+  border: 1px solid #FBB217;
+  color: #FBB217;
+}
+
+.second-button:hover {
+  background-color: #FBB217;
+  color: #fff;
 }
 
 .cb-slide-price {
@@ -6011,7 +6030,7 @@ span.sm-title.sm-title2 {
 }
 
 .dark-mode {
-  background-color: #0b1517;
+  background-color: #1F1F1B;
 }
 
 .dark-mode .title {
@@ -11758,3 +11777,21 @@ a.custom-btn-2:hover {
 }
 
 /* Cart Modal End */
+.flex-between-align-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.logo h2 {
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'oswald';
+}
+.logo a {
+  font-size: 24px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 500;
+  margin: 0;
+}
