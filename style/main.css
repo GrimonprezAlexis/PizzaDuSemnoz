@@ -309,7 +309,7 @@ img {
 }
 
 .header-2 {
-  padding: 30px 0;
+  padding: .6rem 0;
 }
 
 .header-2 a:hover {
@@ -3536,7 +3536,7 @@ td.cart-price {
 }
 
 table.table {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .input-group.quantity {
@@ -3738,7 +3738,7 @@ thead.product-table {
 
 .header.header-2 {
   background: #fff0;
-  box-shadow: none;
+  box-shadow: 0 0 30px rgb(227 227 227 / 12%);
 }
 
 /* =================Footer style =========== */
@@ -10666,7 +10666,6 @@ a.ad-menu-img-container {
   height: 230px;
   width: 60%;
   margin: auto;
-  margin-top: 120px;
 }
 
 .ad-menu-qr-code-container {
@@ -11794,4 +11793,24 @@ a.custom-btn-2:hover {
   font-family: "Lobster Two", cursive;
   font-weight: 500;
   margin: 0;
+}
+
+.button-tag {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  color: #666666;
+  transition: 0.3s;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  background: none;
+}
+.button-tag:hover {
+  border-color: #cc3333;
+  background-color: #cc3333;
+  color: #fff;
+}
+.button-tag-active {
+  border-color: #cc3322;
+  background-color: #cc3322;
+  color: #fff;
 }

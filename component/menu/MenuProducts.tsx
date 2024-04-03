@@ -1,181 +1,142 @@
-"use client"
-import { useCafeuContext } from "@/context/CafeuContext";
-import Link from "next/link";
-import React from "react";
-import { Nav } from "react-bootstrap";
+'use client';
+import React, { useState } from 'react';
+import QrCodeMenu from './QrCodeMenu';
+
+import {
+  PizzaCategory,
+  PizzaTitle,
+  allPizzaList,
+  nouveautePizzaList,
+  classicPizzas,
+  incontournablesPizzaList,
+  specialesPizzaList,
+  pimentesPizzaList,
+  pizzaDesMersList,
+  sucreesSaleesPizzasList,
+  allBoissons,
+} from '@/data/Data';
+
+import PizzaTable, { Pizza } from './PizzaTable';
+import BoissonTable from './BoissonTable';
+import CategoryButton from './CategoryButton';
+
 interface MenuProps {
-  style: string,
-  showMoreBtn: boolean,
-  endIndex: number,
+  style: string;
+  showMoreBtn: boolean;
+  endIndex: number;
 }
-const MenuProducts:React.FC<MenuProps> = ({style,showMoreBtn,endIndex}) => {
-    const {
-      activeMenuProductTab,
-      handleMenuProductTabChange,
-      filteredMenuProductList,
-      addToWishlist,
-      addToCart,
-      openLightBoxModal,
-      handleMenuShowMore,
-      handleMenuShowLess,
-      wishlist
-    } = useCafeuContext()
-    const menuProductItems= filteredMenuProductList.slice(0,endIndex)
+const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => {
+  const [selectedCategory, setSelectedCategory] = useState<PizzaCategory>(PizzaCategory.ALL);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
+  const filteredPizzas = allPizzaList.filter((pizza) => {
+    const categoryMatch = selectedCategory === PizzaCategory.ALL || pizza.category === selectedCategory;
+    const ingredientMatch = !searchQuery || searchQuery.length <= 3 || pizza.ingredients.toLowerCase().includes(searchQuery.toLowerCase());
+    return categoryMatch && ingredientMatch;
+  });
+
+  // Group filtered pizzas by category
+  const pizzasByCategory: { [key in PizzaCategory]?: Pizza[] } = {};
+  filteredPizzas.forEach((pizza) => {
+    if (!pizzasByCategory[pizza.category]) {
+      pizzasByCategory[pizza.category] = [];
+    }
+    pizzasByCategory[pizza.category]?.push(pizza);
+  });
+
+  console.log('filteredPizzas', filteredPizzas);
+
+  const handleCategoryClick = (category: PizzaCategory) => {
+    setSelectedCategory(category);
+  };
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const renderPizzaTable = (pizzas: Pizza[], title: PizzaTitle) => (
+    <>
+      <h2>{title}</h2>
+      <PizzaTable pizzas={pizzas} />
+      <hr></hr>
+    </>
+  );
+
+  const renderCategoryButtons = () => {
+    return Object.entries(PizzaTitle).map(([key, value]) => (
+      <CategoryButton
+        key={key}
+        category={PizzaCategory[key as keyof typeof PizzaCategory]}
+        title={value}
+        onClick={() => handleCategoryClick(PizzaCategory[key as keyof typeof PizzaCategory])}
+        isActive={selectedCategory === PizzaCategory[key as keyof typeof PizzaCategory]}
+      />
+    ));
+  };
+
+  const renderPizzaTables = () => {
+    return Object.entries(pizzasByCategory).map(([category, pizzas]) => (
+      <div key={category}>
+        <h2>{PizzaTitle[category as keyof typeof PizzaCategory]}</h2>
+        <PizzaTable pizzas={pizzas} />
+        <hr />
+      </div>
+    ));
+  };
+
+  const renderNoPizzaFound = () => {
+    return (
+      <div className="col-lg-12">
+        <p>Aucune pizza trouvée.</p>
+      </div>
+    );
+  };
+
   return (
     <section>
-      <div className={`product ${style} cpy-8`}>
-        <div className="container">
-          <div className="product-inner">
-            <div className="row">
-              <div
-                className="section-head text-center"
-                data-aos="fade-up"
-                data-aos-duration="500"
-              >
-                <span className="sm-title ">Special Menu</span>
-                <h2 className="sec-title">Our Specials Menu</h2>
-                <div
-                  className="product-cat "
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="controls">
-                    <Nav 
-                    className="cat-menu justify-content-center"
-                    activeKey={activeMenuProductTab}
-                    onSelect={handleMenuProductTabChange}
-                    >
-                    <Nav.Item>
-                      <Nav.Link className="cat-menu-li" eventKey="all">
-                        <span className="cat-name">All Categories</span>
-                      </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="cat-menu-li" eventKey="perch-fish">
-                        <span className="cat-name">Perch Fish</span>
-                      </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="cat-menu-li" eventKey="lobster">
-                        <span className="cat-name">Lobster</span>
-                      </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="cat-menu-li" eventKey="shrimps">
-                        <span className="cat-name">Shrimps</span>
-                      </Nav.Link>
-                      </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="cat-menu-li" eventKey="red_crab">
-                        <span className="cat-name">Red Crab</span>
-                      </Nav.Link>
-                    </Nav.Item>
-                    </Nav>
+      <div className={`product ${style}`}>
+        <QrCodeMenu />
+
+        <section className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="sidebar-default pl-25">
+                <div className="sidebar-single mb-50" data-aos="fade-up" data-aos-duration="500">
+                  <h4 className="sidebar-title mb-25">Nos différentes pizzas</h4>
+                  <div className="sidebar-tags">{renderCategoryButtons()}</div>
+
+                  <div className="input-group">
+                    <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscribtion-input" value={searchQuery} onChange={handleSearchChange} />
+                    <button type="submit" className="custom-btn">
+                      <span className="icofont-search-1"></span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              className="describe-content mt-50"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="all-product">
-                <div className="row justify-content-center">
-                    {menuProductItems.map((item) => (
-                        <div className={`col-md-6 col-xl-3 col-lg-4 col-sm-6 mb-4 mix ${item.category}`} key={item.id}>
-                            <div className="product-card">
-                            {item.status && <p className="status-product">New</p>}
-                            <div className="product-img">
-                                <Link href={`/shop/${item.slug}`}>
-                                <img src={item.imgSrc} alt={item.name} />
-                                </Link>
-                            </div>
-                            <div className="product-details">
-                                <Link href={`/shop/${item.slug}`} className="product-name">
-                                {item.name}
-                                </Link>
-                                <ul className="rating">
-                                <li>
-                                    {" "}
-                                    <span className="icofont-ui-rating"></span>
-                                </li>
-                                <li>
-                                    {" "}
-                                    <span className="icofont-ui-rating"></span>
-                                </li>
-                                <li>
-                                    {" "}
-                                    <span className="icofont-ui-rating"></span>
-                                </li>
-                                <li>
-                                    {" "}
-                                    <span className="icofont-ui-rating"></span>
-                                </li>
-                                <li>
-                                    {" "}
-                                    <span className={`icofont-ui-rating ${item.rating? item.rating :''}`}></span>
-                                </li>
-                                </ul>
-                                <p className="price">{item.priceRange}</p>
+          </div>
+        </section>
 
-                                <ul className="pd-btn-group">
-                                <li>
-                                    <a 
-                                    role="button"
-                                    onClick={()=> addToWishlist(item.id)}
-                                    className={`shop-btn ${wishlist.some(wishlistItem => wishlistItem.id === item.id) ? 'active' : ''}`}
-                                    >
-                                    <span className="icofont-heart-alt"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                    className="shop-btn"
-                                    role="button"
-                                    onClick={()=> addToCart(item.id)}
-                                    >
-                                    <span className="icofont-shopping-cart"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                    className="shop-btn"
-                                    role="button"
-                                    onClick={() => openLightBoxModal(item)}
-                                    >
-                                    <span className="icofont-eye"></span>
-                                    </a>
-                                </li>
-                                </ul>
-                            </div>
-                            </div>
-                        </div>
-                    ))}
-                  
+        <section className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              {selectedCategory === PizzaCategory.ALL && !filteredPizzas.length && (
+                <div className="blog-left-wrapp">
+                  {renderPizzaTable(nouveautePizzaList, PizzaTitle.NOUVEAUTE)}
+                  {renderPizzaTable(classicPizzas, PizzaTitle.CLASSIQUES)}
+                  {renderPizzaTable(incontournablesPizzaList, PizzaTitle.INCONTOURNABLES)}
+                  {renderPizzaTable(specialesPizzaList, PizzaTitle.SPECIALES)}
+                  {renderPizzaTable(pimentesPizzaList, PizzaTitle.PIMENTES)}
+                  {renderPizzaTable(pizzaDesMersList, PizzaTitle.PIZZA_DES_MERS)}
+                  {renderPizzaTable(sucreesSaleesPizzasList, PizzaTitle.SUCREES_SALEES)}
                 </div>
-              </div>
-              {showMoreBtn  && (
-              <div className="row">
-                <div className="text-center my-4">
-                {menuProductItems.length === 8 ? (
-                  <a className="custom-btn" role="button" onClick={handleMenuShowMore}>
-                    Show More
-                  </a>
-                ) : menuProductItems.length > 8 ? (
-                  <a className="custom-btn" role="button" onClick={handleMenuShowLess}>
-                    Show Less
-                  </a>
-                ) : (
-                  <></>
-                )}
-              </div>
+              )}
 
-              </div>
-            )}
+              {filteredPizzas.length ? renderPizzaTables() : renderNoPizzaFound()}
+              <BoissonTable boissons={allBoissons} title={'Les boissons'} />
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
