@@ -2674,7 +2674,8 @@ img.app-tow {
   background: #fff;
   width: 100%;
   padding: 40px 20px;
-  box-shadow: 0px 15px 20px 1px #9c9c9c52;
+  box-shadow: 7px 3px 20px 10px #9c9c9c52;
+  border-radius: 3px;
 }
 
 .note-li {
@@ -6010,11 +6011,13 @@ span.sm-title.sm-title2 {
   background-color: transparent;
   border: 1px solid #FBB217;
   color: #FBB217;
+  transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .second-button:hover {
   background-color: #FBB217;
   color: #fff;
+  box-shadow: 0 0 10px 5px rgba(251, 178, 23, 0.5);
 }
 
 .cb-slide-price {
@@ -6294,7 +6297,7 @@ button.video-modal-close-btn:hover {
 }
 
 .page-banner.breadcrumb-section {
-  background-image: url(../public/img/page-ban-bg.png);
+  background-image: url(../public/img/v2/3.png);
 }
 
 .postbox__thumb.w-img img {
@@ -11822,21 +11825,20 @@ a.custom-btn-2:hover {
   background-color: #cc3322;
   color: #fff;
 }
-
+/* Table */
 .table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
 /* Table Header */
 .table th {
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: #f2f2f2; /* Header background color */
+  color: #333; /* Header text color */
   font-weight: bold;
   padding: 12px;
   text-align: left;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Table Body */
@@ -11847,10 +11849,105 @@ a.custom-btn-2:hover {
 
 /* Alternate Row Color */
 .table tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 /* Hover Effect */
 .table tbody tr:hover {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
+}
+
+.menu-product-title {
+  text-align: center;
+  position: relative;
+}
+
+.menu-product-title h3 {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+.menu-product-title h3 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.bg-nouveaute h3 {
+  background-color: #cc3322;
+}
+
+.bg-classiques h3 {
+  background-color: #77B255;
+}
+
+.bg-incontournables h3 {
+  background-color: #cc3322;
+}
+
+.bg-speciales h3 {
+  background-color: #77B255;
+}
+
+.bg-pimentes h3 {
+  background-color: #cc3322;
+}
+
+.bg-pizza_des_mers h3 {
+  background-color: #77B255;
+}
+
+.bg-sucrees_salees h3 {
+  background-color: #cc3322; 
+}
+
+.highlight {
+  background-color: yellow; /* You can customize this */
+  font-weight: bold; /* You can customize this */
+}
+
+.bg-soft-blue h3 {
+  background-color: #1f497d;
+}
+
+@keyframes pulse-number {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #cc3333;
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
+    font-size: 1.5em;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.kf-pulse-number {
+  box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+	animation: pulse-number 1.5s infinite;
+}
+
+
+.kf-pulse-yellow {
+	box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
+	animation: pulse-yellow 2s infinite;
+}
+
+@keyframes pulse-yellow {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+	}
 }

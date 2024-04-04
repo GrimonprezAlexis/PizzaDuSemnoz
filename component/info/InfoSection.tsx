@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogSlider from '../blog/BlogSlider';
 
 const InfoSection = () => {
   return (
@@ -35,15 +36,17 @@ const InfoSection = () => {
                 tous cela avec des boissons (sodas, vin, etc.) et des glaces.
               </p>
 
-              <a href="#" className="cb-item-btn mt-20">
+              <a href="/menu" className="cb-slider-button second-button mt-20 kf-pulse-yellow">
                 Voir Prix des Pizzas
               </a>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="1500">
-            <div className="cb-item-info-img w-100 mb-40 pl-50 text-lg-end">
+            <BlogSlider />
+
+            {/* <div className="cb-item-info-img w-100 mb-40 pl-50 text-lg-end">
               <img src="img/image/dish.png" alt="img" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

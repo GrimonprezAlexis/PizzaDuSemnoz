@@ -8,7 +8,9 @@ export interface Boisson {
 
 const BoissonTable: React.FC<{ boissons: Boisson[]; title: string }> = ({ boissons, title }) => (
   <div>
-    <h2>{title}</h2>
+    <div className={`row menu-product-title bg-soft-blue`}>
+      <h3>{title}</h3>
+    </div>
     <table className="table table-striped">
       <thead>
         <tr>

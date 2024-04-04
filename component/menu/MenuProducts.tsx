@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import QrCodeMenu from './QrCodeMenu';
 
 import {
@@ -28,12 +28,38 @@ interface MenuProps {
 const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => {
   const [selectedCategory, setSelectedCategory] = useState<PizzaCategory>(PizzaCategory.ALL);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [completeWordMatch, setCompleteWordMatch] = useState<string>('');
 
-  const filteredPizzas = allPizzaList.filter((pizza) => {
-    const categoryMatch = selectedCategory === PizzaCategory.ALL || pizza.category === selectedCategory;
-    const ingredientMatch = !searchQuery || searchQuery.length <= 3 || pizza.ingredients.toLowerCase().includes(searchQuery.toLowerCase());
-    return categoryMatch && ingredientMatch;
-  });
+  const extractCompleteWordMatch = (ingredients: string) => {
+    if (!searchQuery || searchQuery.length < 3) {
+      return '';
+    }
+    const words = ingredients.split(', ');
+    const foundWord = words.find((word) => word.toLowerCase().includes(searchQuery.toLowerCase()));
+    return foundWord ? foundWord : '';
+  };
+
+  const filteredPizzas = useMemo(() => {
+    return allPizzaList.filter((pizza) => {
+      const categoryMatch = selectedCategory === PizzaCategory.ALL || pizza.category === selectedCategory;
+      const ingredientMatch = !searchQuery || searchQuery.length <= 3 || pizza.ingredients.toLowerCase().includes(searchQuery.toLowerCase());
+      return categoryMatch && ingredientMatch;
+    });
+  }, [selectedCategory, searchQuery]);
+
+  useEffect(() => {
+    if (searchQuery) {
+      const completeMatch = filteredPizzas.reduce((match, pizza) => {
+        if (!match) {
+          return extractCompleteWordMatch(pizza.ingredients);
+        }
+        return match;
+      }, '');
+      setCompleteWordMatch(completeMatch);
+    } else {
+      setCompleteWordMatch('');
+    }
+  }, [searchQuery, filteredPizzas]);
 
   // Group filtered pizzas by category
   const pizzasByCategory: { [key in PizzaCategory]?: Pizza[] } = {};
@@ -56,8 +82,10 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 
   const renderPizzaTable = (pizzas: Pizza[], title: PizzaTitle) => (
     <>
-      <h2>{title}</h2>
-      <PizzaTable pizzas={pizzas} />
+      <div className="row menu-product-title">
+        <h3>{title}</h3>
+      </div>
+      <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} />
       <hr></hr>
     </>
   );
@@ -74,11 +102,21 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
     ));
   };
 
+  function getTitleBackgroundColor(str: any) {
+    return str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s/g, '-')
+      .toLowerCase();
+  }
+
   const renderPizzaTables = () => {
     return Object.entries(pizzasByCategory).map(([category, pizzas]) => (
       <div key={category}>
-        <h2>{PizzaTitle[category as keyof typeof PizzaCategory]}</h2>
-        <PizzaTable pizzas={pizzas} />
+        <div className={`row menu-product-title bg-${getTitleBackgroundColor(category)}`}>
+          <h3>{PizzaTitle[category as keyof typeof PizzaCategory]}</h3>
+        </div>
+        <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} />
         <hr />
       </div>
     ));

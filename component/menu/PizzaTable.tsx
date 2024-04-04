@@ -7,7 +7,7 @@ export interface Pizza {
   category: PizzaCategory;
 }
 
-const PizzaTable: React.FC<{ pizzas: Pizza[] }> = ({ pizzas }) => (
+const PizzaTable: React.FC<{ pizzas: Pizza[]; highlightedWord: string }> = ({ pizzas, highlightedWord }) => (
   <table className="table table-striped">
     <thead>
       <tr>
@@ -22,7 +22,15 @@ const PizzaTable: React.FC<{ pizzas: Pizza[] }> = ({ pizzas }) => (
       {pizzas.map((pizza, index) => (
         <tr key={index}>
           <th scope="row">{pizza.name}</th>
-          <td>{pizza.ingredients}</td>
+          <td>
+            {highlightedWord
+              ? pizza.ingredients.split(', ').map((ingredient, idx) => (
+                  <span key={idx} className={ingredient.toLowerCase().includes(highlightedWord.toLowerCase()) ? 'highlight' : ''}>
+                    {' ' + ingredient + ','}
+                  </span>
+                ))
+              : pizza.ingredients}
+          </td>
           {pizza.prices.map((price, idx) => (
             <td key={idx}>{price}</td>
           ))}

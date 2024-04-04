@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import ScheduleBlock from '../schedule/ScheduleBlock';
 interface AboutProp {
   style: string;
 }
@@ -10,43 +11,7 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
         <div className="container">
           <div className="flex-between-align-start">
             <div className="col-md-6 col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1000">
-              <div className="avail-inner">
-                <div className="available-note">
-                  <div className="note-head">
-                    <h2 className="sm-title mb-0">Horaire d'ouverture</h2>
-                    <h2 className="note-title mb-0">Nos disponibilités</h2>
-                  </div>
-                  <ul className="note-ul">
-                    <li className="note-li">
-                      <p className="day">Distributeur à Pizza</p>
-                      <p className="time">24h/24 & 7j/7</p>
-                    </li>
-                    <li className="note-li">
-                      <p className="day">Mardi au Samedi</p>
-                      <p className="time">12h à 13h30</p>
-                    </li>
-                    <li className="note-li">
-                      <p className="day">Mardi au Dimanche</p>
-                      <p className="time">17h30 à 22h</p>
-                    </li>
-                    <li className="note-li">
-                      <p className="day">Dimanche midi</p>
-                      <p className="time">Fermé</p>
-                    </li>
-                    <li className="note-li">
-                      <p className="day">Lundi journée</p>
-                      <p className="time">Fermé</p>
-                    </li>
-                  </ul>
-
-                  <div className="note-footer">
-                    <h4 className="note-footer-text">Commandez maintenant</h4>
-                    <a className="note-footer-text" href="tel:+0664541850">
-                      06 64 54 18 50
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <ScheduleBlock />
             </div>
             <div className="col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
               <div className="about-content">
@@ -80,8 +45,8 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
                     </li>
                   </ul>
                 </div>
-                <Link href="/about" className="custom-btn">
-                  About More
+                <Link href="/about" className="cb-slider-button second-button">
+                  En Savoir Plus
                 </Link>
               </div>
             </div>
