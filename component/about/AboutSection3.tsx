@@ -6,7 +6,7 @@ interface AboutProp {
 const AboutSection3: React.FC<AboutProp> = ({ style }) => {
   return (
     <section>
-      <div className={`about about-3 ${style} cpy-8`}>
+      <div className={`about about-3 ${style} pt-75 pb-10`}>
         <div className="container">
           <div className="flex-between-align-start">
             <div className="col-md-6 col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1000">
@@ -14,6 +14,7 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
                 <div className="available-note">
                   <div className="note-head">
                     <h2 className="sm-title mb-0">Horaire d'ouverture</h2>
+                    <h2 className="note-title mb-0">Nos disponibilités</h2>
                   </div>
                   <ul className="note-ul">
                     <li className="note-li">
@@ -50,12 +51,13 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
             <div className="col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
               <div className="about-content">
                 <p className="sec-sm-title">A propos</p>
-                <h2 className="title mb-0">We With The Aspects Food Professional Services</h2>
-
+                <h2 className="title mb-0">Pizza de qualité 24h/7j</h2>
                 <p className="des mb-0">
-                  Design of choice for many of the world’s leading enterprises end technology challengers. We help businesses elevate the alue ere is custom software to
-                  development, product design, sed apor lored incididcom modo nunc vel purusesfher commodo nunc vel purus
+                  Pizza du Semnoz a été créé par XX , passionnée de cuisine et savoyard dans l’âme ! Notre Chalet Pizza du Semnoz abrite un distributeur à pizza révolutionnaire,
+                  offrant une expérience gastronomique à toute heure du jour ou de la nuit. Nous mettons un point d’honneur à la fraîcheur et à la qualité de nos produits, avec une
+                  pâte maison préparée quotidiennement. Rendez-nous visite pour savourer l’essence des Alpes, une part de pizza à la fois.
                 </p>
+
                 <div className="about-role">
                   <ul className="about-ul">
                     <li>
@@ -84,6 +86,9 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="container cpy-5">
+          <hr></hr>
         </div>
       </div>
     </section>

@@ -525,82 +525,73 @@ const serviceList = [
     title: 'Exquisite Dessert Delights',
     slug: 'exquisite-dessert-delights',
     desc: 'Satisfy your sweet cravings with our exquisite dessert delights, each bite a heavenly experience for your taste buds.',
-    longDesc:
-      'Treat yourself to sweet indulgence with our exquisite dessert delights. Each bite is a heavenly experience for your taste buds, crafted with precision and care. From decadent chocolate creations to delicate pastries, our desserts are the perfect way to satisfy your sweet cravings.',
   },
   {
     id: 6,
     mainImgSrc: 'img/service/service-7.png',
     imgSrc: 'img/icon/1.png',
-    title: '100% Swiss Quality',
+    title: 'Produits 100% frais',
     slug: '100-swiss-quality',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Experience the unparalleled quality of Swiss craftsmanship in every aspect of our restaurant. From the ingredients we use to the service we provide, we uphold the highest standards of excellence. Join us for a truly Swiss dining experience.',
+    desc: `Nous élaborons nos pizzas avec des ingrédients de qualité de façon à vous offrir toute la saveur d'une pizza traditionnelle faites par un artisan qualifié.`,
   },
   {
     id: 7,
     mainImgSrc: 'img/service/service-8.png',
     imgSrc: 'img/icon/2.png',
-    title: 'Organic Production',
+    title: 'Pizzas 24 h/24',
     slug: 'organic-production',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'We are committed to organic production methods that prioritize the well-being of our planet and your health. Our ingredients are sourced from trusted organic suppliers, ensuring that you enjoy meals that are not only delicious but also environmentally responsible.',
+    desc: 'Notre distributeur vous propose nos pizzas fabriquées de façon identique selon le même savoir-faire que celui que nous employons habituellement.',
   },
   {
     id: 8,
     mainImgSrc: 'img/service/service-9.png',
     imgSrc: 'img/icon/3.png',
-    title: 'Food Law Certified',
+    title: 'Format 50 cm',
     slug: 'food-law-certified',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Rest assured that our restaurant complies with all food laws and regulations to ensure the safety and quality of the dishes we serve. We take food safety seriously and adhere to the highest standards of hygiene and quality control.',
+    desc: 'Avis à tous les gourmands, vous pouvez maintenant choisir le maxi format 50 cm pour toutes les pizzas de notre carte !',
   },
   {
     id: 9,
     mainImgSrc: 'img/service/service-10.png',
     imgSrc: 'img/icon/4.png',
-    title: 'Food Production',
+    title: 'Charte qualité',
     slug: 'food-production',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
+    desc: `Retrouvez ici tous les avis des internautes sur Tripadisor concernant leur expérience sur la qualité de nos pizzas. N'oubliez pas de nous donner le vôtre`,
   },
-  {
-    id: 10,
-    mainImgSrc: 'img/aida-images/service-image1.png',
-    lightImg: 'img/aida-images/service-icon1.png',
-    darkImg: 'img/aida-images/ad-2-service-card-icon1.png',
-    title: 'Grilled Beef Steak',
-    slug: 'grilled-beef-steak',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
-  },
-  {
-    id: 11,
-    mainImgSrc: 'img/aida-images/service-image3.png',
-    lightImg: 'img/aida-images/service-icon3.png',
-    darkImg: 'img/aida-images/ad-2-service-card-icon2.png',
-    title: 'Chicken Drumsticks',
-    slug: 'chicken-drumsticks',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
-  },
-  {
-    id: 12,
-    mainImgSrc: 'img/aida-images/service-image1.png',
-    lightImg: 'img/aida-images/service-icon1.png',
-    darkImg: 'img/aida-images/ad-2-service-card-icon1.png',
-    title: 'Healthy Fresh Fish',
-    slug: 'healthy-fresh-fish',
-    desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
-    longDesc:
-      'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
-  },
+
+  // {
+  //   id: 10,
+  //   mainImgSrc: 'img/aida-images/service-image1.png',
+  //   lightImg: 'img/aida-images/service-icon1.png',
+  //   darkImg: 'img/aida-images/ad-2-service-card-icon1.png',
+  //   title: 'Grilled Beef Steak',
+  //   slug: 'grilled-beef-steak',
+  //   desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
+  //   longDesc:
+  //     'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
+  // },
+  // {
+  //   id: 11,
+  //   mainImgSrc: 'img/aida-images/service-image3.png',
+  //   lightImg: 'img/aida-images/service-icon3.png',
+  //   darkImg: 'img/aida-images/ad-2-service-card-icon2.png',
+  //   title: 'Chicken Drumsticks',
+  //   slug: 'chicken-drumsticks',
+  //   desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
+  //   longDesc:
+  //     'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
+  // },
+  // {
+  //   id: 12,
+  //   mainImgSrc: 'img/aida-images/service-image1.png',
+  //   lightImg: 'img/aida-images/service-icon1.png',
+  //   darkImg: 'img/aida-images/ad-2-service-card-icon1.png',
+  //   title: 'Healthy Fresh Fish',
+  //   slug: 'healthy-fresh-fish',
+  //   desc: 'Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua',
+  //   longDesc:
+  //     'Our food production process is a well-oiled machine that guarantees the consistency and quality of every dish. From the kitchen to your table, we take pride in our food production practices to ensure that you enjoy the best culinary experience possible.',
+  // },
 ];
 
 const pricingList = [
@@ -1068,24 +1059,14 @@ const bannerData3 = [
   {
     id: 0,
     bannerBg: 'banner-one',
-    subTitle: 'Des Pizzas de qualité à emporter à toute heure !',
+    subTitle: 'Pizza de qualité 24h/7j',
     title: 'Pizza du Semnoz, un large choix de pizzas.',
   },
   {
     id: 1,
     bannerBg: 'banner-two',
-    subTitle: 'Medium 3-Topping* Pizza',
-    title: 'Experience a Garden of Flavors in Every Bite',
-    currentPrice: '$25.65',
-    prevPrice: '$28.99',
-  },
-  {
-    id: 2,
-    bannerBg: 'banner-three',
-    subTitle: 'Medium 3-Topping* Pizza',
-    title: 'Taste the Tradition of Italian Perfection',
-    currentPrice: '$15.50',
-    prevPrice: '$20.99',
+    subTitle: 'Cuite avec amour',
+    title: 'Pâte à pizza faite maison',
   },
 ];
 

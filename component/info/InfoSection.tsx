@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoSection = () => {
   return (
-    <div className="cb-item-info-area home5-info dark-mode pt-105 pb-65">
+    <div className="cb-item-info-area home5-info dark-mode pt-5 pb-65">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 order-1 order-lg-0" data-aos="fade-up" data-aos-duration="1000">

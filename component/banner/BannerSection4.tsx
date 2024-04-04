@@ -31,13 +31,13 @@ const BannerSection4 = () => {
                           <div className="cb-slider-list">
                             <ul>
                               <li>
-                                <i className="icofont-check-alt"></i>Panpie, Burgers, And Best
+                                <i className="icofont-check-alt"></i>A emporter
                               </li>
                               <li>
-                                <i className="icofont-check-alt"></i>Excellent Of Quality Pizza
+                                <i className="icofont-check-alt"></i>Préparées sur commandes
                               </li>
                               <li>
-                                <i className="icofont-check-alt"></i>Chicken Sandwich
+                                <i className="icofont-check-alt"></i>Distributeur 24H/7J
                               </li>
                             </ul>
                           </div>
