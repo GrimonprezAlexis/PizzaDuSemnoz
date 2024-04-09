@@ -302,15 +302,11 @@ const blogDataList = [
 const blogSlider = [
   {
     id: 0,
-    imgSrc: '/img/product/17.png',
+    imgSrc: '/img/v2/foodtruck.png',
   },
   {
     id: 1,
-    imgSrc: '/img/product/18.png',
-  },
-  {
-    id: 2,
-    imgSrc: '/img/product/19.png',
+    imgSrc: '/img/v2/devant.png',
   },
 ];
 
