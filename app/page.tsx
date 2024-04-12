@@ -4,8 +4,8 @@ import SearchModal from '@/component/modal/SearchModal';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cafeu Home Page 1',
-  description: 'Developed by Azizur Rahman',
+  title: 'Pizza Du Semnoz',
+  description: 'Développé par Seven Consulting',
 };
 
 export default function Home() {

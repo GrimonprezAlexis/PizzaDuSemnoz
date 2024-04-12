@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
+import BlogSlider from '../blog/BlogSlider';
 
 const AboutSection = () => {
   return (
@@ -8,10 +9,8 @@ const AboutSection = () => {
       <div className="about about-1 cpy-8">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
-              <div className="about-img">
-                <img src="img/image/exparience.png" alt="" />
-              </div>
+            <div className="col-lg-6 col-md-6 mb-4 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="1500">
+              <BlogSlider />
             </div>
 
             <div className="col-lg-6 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000">

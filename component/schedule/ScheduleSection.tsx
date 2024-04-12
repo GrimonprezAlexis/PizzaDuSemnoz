@@ -17,12 +17,8 @@ const ScheduleSection = () => {
                     <a className="video-btn play-video" role="button" onClick={openVideoModal}>
                       <span className="icofont-ui-play"></span>
                     </a>
-                    <h2 className="available-head">
-                      We Have Excellent Of Quality <br /> Japanese Food
-                    </h2>
-                    <p className="mb-0">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br /> do eiusmod tempor incididunt ut labore et dolore
-                    </p>
+                    <h2 className="available-head">24h/7j : Dégustez nos pizzas 24h/7j</h2>
+                    <p className="mb-0">avec un distributeur de pizza à votre disposition derrière le chalet </p>
                   </div>
                 </div>
                 <div className="col-md-6 col-xl-4 col-lg-5 my-2" data-aos="fade-left" data-aos-duration="1000">

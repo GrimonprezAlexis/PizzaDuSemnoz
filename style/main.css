@@ -323,6 +323,22 @@ img {
 
 .logo {
   padding: 15px 0;
+  display: flex;
+  gap: 10px
+}
+.logo-text-red {
+  color: #cc3333!important;
+}
+.logo-text h3 {
+  margin: 0;
+  font-family: cursive;
+  letter-spacing: 1.02px;
+  color: white;
+}
+.logo-text-2 h3 {
+  margin: 0;
+  font-family: cursive;
+  letter-spacing: 1.02px;  
 }
 
 .logo img {
@@ -2713,7 +2729,7 @@ img.app-tow {
 
 .available-head {
   color: #fff;
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 
 .available-content {
@@ -11812,6 +11828,11 @@ a.custom-btn-2:hover {
   background-color: #cc3322;
   color: #fff;
 }
+
+.footer-logo h3 {
+  color: wheat;
+}
+
 /* Table */
 .table {
   border-collapse: collapse;

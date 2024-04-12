@@ -123,27 +123,27 @@ const teamList = [
 const partnerList = [
   {
     id: 0,
-    imgSrc: 'img/partner/1.png',
+    imgSrc: 'img/v2/carousel-footer/1.jpeg',
   },
   {
     id: 1,
-    imgSrc: 'img/partner/2.png',
+    imgSrc: 'img/v2/carousel-footer/2.jpeg',
   },
   {
     id: 2,
-    imgSrc: 'img/partner/3.png',
+    imgSrc: 'img/v2/carousel-footer/3.jpeg',
   },
   {
     id: 3,
-    imgSrc: 'img/partner/4.png',
+    imgSrc: 'img/v2/carousel-footer/4.jpeg',
   },
   {
     id: 4,
-    imgSrc: 'img/partner/1.png',
+    imgSrc: 'img/v2/carousel-footer/5.jpeg',
   },
   {
     id: 5,
-    imgSrc: 'img/partner/2.png',
+    imgSrc: 'img/v2/carousel-footer/6.jpeg',
   },
 ];
 

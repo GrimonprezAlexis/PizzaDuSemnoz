@@ -18,8 +18,14 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
           <div className="header-inner">
             <div className="logo">
               <Link href="/">
-                <img src="/img/logo/logo.png" alt="Logo not found" className="logo-img" />
+                <img src="/img/logo/logo-pizza.png" alt="Logo not found" className="logo-img" />
               </Link>
+              <div className="logo-text-2">
+                <h3>Pizza Du Semnoz</h3>
+                <Link className="kf-pulse-number logo-text-red" href="tel:+0664541850">
+                  <i className="icofont-phone"></i> 06 64 54 18 50
+                </Link>
+              </div>
             </div>
             <div className="header-right">
               <div className="header-menu d-none d-lg-block">

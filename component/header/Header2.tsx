@@ -17,10 +17,12 @@ const Header2: React.FC<HeaderProp> = ({ logo, theme }) => {
         <div className="container">
           <div className="header-inner second-home-nav">
             <div className="logo">
-              <h2>Pizza du Semnoz</h2>
-              <Link className="kf-pulse-number" href="tel:+0664541850">
-                <i className="icofont-phone"></i> 06 64 54 18 50
-              </Link>
+              <div className="logo-text">
+                <h3>🍕 Pizza Du Semnoz</h3>
+                <Link className="kf-pulse-number" href="tel:+0664541850">
+                  <i className="icofont-phone"></i> 06 64 54 18 50
+                </Link>
+              </div>
             </div>
             <div className="header-right">
               <div className="header-menu d-none d-lg-block">

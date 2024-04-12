@@ -15,7 +15,7 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
             <div className="col-lg-3 col-md-6 col-sm-6 my-2 smpadright40" data-aos="fade-up" data-aos-duration="500">
               <div className="footer-content-wrapper">
                 <div className="footer-logo mb-4">
-                  <img src="/img/logo/logo-white.png" alt="" />
+                  <h3>🍕 Pizza Du Semnoz</h3>
                 </div>
                 <p>Retrouvez-nous au Parking GEANT Casino - Face au restaurant McDonalds</p>
                 <ul className="address">
