@@ -85,32 +85,32 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
                 <ul className="insta-feed">
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/1.png" alt="" />
+                      <img src="/img/v2/footer/1.jpeg" alt="" />
                     </a>
                   </li>
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/2.png" alt="" />
+                      <img src="/img/v2/footer/2.jpeg" alt="" />
                     </a>
                   </li>
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/3.png" alt="" />
+                      <img src="/img/v2/footer/3.jpeg" alt="" />
                     </a>
                   </li>
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/4.png" alt="" />
+                      <img src="/img/v2/footer/4.jpeg" alt="" />
                     </a>
                   </li>
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/5.png" alt="" />
+                      <img src="/img/v2/footer/5.jpeg" alt="" />
                     </a>
                   </li>
                   <li className="foot-list">
                     <a href="https://www.instagram.com/" className="footer-link">
-                      <img src="/img/instagram/6.png" alt="" />
+                      <img src="/img/v2/footer/6.jpeg" alt="" />
                     </a>
                   </li>
                 </ul>
@@ -168,7 +168,7 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
                 </ul>
               </div>
               <div className="text-center">
-                <p className="copyright-text">© Copyright Cafeu. {currentYear} All Right Reserved</p>
+                <p className="copyright-text">© Seven Consulting. {currentYear} All Right Reserved</p>
               </div>
               <div className="text-center">
                 <a href="#" className="social-link">

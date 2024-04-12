@@ -1,7 +1,7 @@
 /*========================================
 Author Name:   Codebasket
 Template Type: Restaurant Management
-Brand Color:   #cc3333, #79a1bb, #FBB217
+Brand Color:   #cc3333, #79a1bb, wheat
 Icon:          Ico font
 Text font:     Lobster Two, Roboto
 Version:       v1.0.01
@@ -318,7 +318,7 @@ img {
 }
 
 .header-2.theme-3 a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .logo {
@@ -389,7 +389,7 @@ ul.right-social-ul li {
 }
 
 .social-sec-3 .share-link:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 /* ==========================
@@ -1174,7 +1174,7 @@ img.app-one {
 }
 
 .banner-3 .text-inner .sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .banner-img-one {
@@ -1508,7 +1508,7 @@ ul.cat-menu {
 }
 
 .header-2.theme-3 .product-name:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .product-2 .product-name:hover {
@@ -1884,12 +1884,10 @@ span.swiper-pagination-bullet {
 }
 
 .second-home-nav {
-  background: #fff;
   padding: 0 20px;
 }
 
 .header.navbar-fixed .second-home-nav {
-  background: #fff;
   box-shadow: 0px 7px 20px 0px #adadad4a;
 }
 
@@ -1967,7 +1965,7 @@ span.swiper-pagination-bullet {
 }
 
 .header-2.theme-3 .remove-icon:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .cart-px-name {
@@ -1998,7 +1996,7 @@ span.swiper-pagination-bullet {
 }
 
 .header-2.theme-3 .cart-modal-btn .custom-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .header-2.theme-3 .cart-modal-btn .custom-btn:hover {
@@ -2154,7 +2152,7 @@ ul.about-ul li {
 .subscribe::before {
   content: "";
   clip-path: polygon(0% 0%, 100% 0%, 76% 100%, 0% 100%);
-  background: #FBB217e3;
+  background: wheate3;
   height: 100%;
   display: block;
   width: 60%;
@@ -3722,7 +3720,7 @@ thead.product-table {
 }
 
 .header.header-2 {
-  background: #fff0;
+  background: #00000045;
   box-shadow: 0 0 30px rgb(227 227 227 / 12%);
 }
 
@@ -3930,7 +3928,7 @@ ul.social-ul {
 }
 
 .banner-3 .custom-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .banner-3 .custom-btn:hover {
@@ -3938,19 +3936,19 @@ ul.social-ul {
 }
 
 .banner-3 .video-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .banner-3 .video-btn::before {
-  background: #FBB217;
+  background: wheat;
 }
 
 .about-3 .sec-sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .about-3 .custom-btn {
-  background: #FBB217;
+  background: wheat;
   margin-top: 15px;
 }
 
@@ -3959,7 +3957,7 @@ ul.social-ul {
 }
 
 .subscribe-3 .custom-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .subscribe-3 .custom-btn:hover {
@@ -3967,23 +3965,23 @@ ul.social-ul {
 }
 
 .subscribe-3 .form-control:focus {
-  border-color: #FBB217;
+  border-color: wheat;
 }
 
 .service-3 .sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .service-3 .show-btn {
-  color: #FBB217;
+  color: wheat;
 }
 
 .service-3 .service-card:hover {
-  background: #FBB217;
+  background: wheat;
 }
 
 .product-3 .sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .product-3 .product-card {
@@ -4003,7 +4001,7 @@ ul.social-ul {
 }
 
 .product-3 .cat-menu-li.mixitup-control-active span {
-  color: #FBB217;
+  color: wheat;
 }
 
 .product-3.theme-1 .cat-menu-li.mixitup-control-active span {
@@ -4011,7 +4009,7 @@ ul.social-ul {
 }
 
 .product-3 .cat-menu-li:hover span {
-  color: #FBB217;
+  color: wheat;
 }
 
 .product-3.theme-1 .cat-menu-li:hover span {
@@ -4019,7 +4017,7 @@ ul.social-ul {
 }
 
 .product-3 .project-title:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .product-3.theme-1 .project-title:hover {
@@ -4035,15 +4033,15 @@ ul.social-ul {
 }
 
 .footer-3 .address-info a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .footer-3 .footer-content-wrapper ul li a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .footer-3 .custom-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .footer-3 .custom-btn:hover {
@@ -4051,47 +4049,47 @@ ul.social-ul {
 }
 
 .footer-3 .form-control:focus {
-  border-color: #FBB217;
+  border-color: wheat;
 }
 
 .delivery-area-3 .video-btn {
-  background: #FBB217;
+  background: wheat;
 }
 
 .delivery-area-3 .video-btn:before {
-  background: #FBB217;
+  background: wheat;
 }
 
 .delivery-area-3 .custom-btn-light {
-  background: #FBB217;
+  background: wheat;
   margin-top: 10px;
 }
 
 .delivery-area-3 .custom-btn-light:hover {
-  color: #FBB217;
+  color: wheat;
   background: #fff;
 }
 
 .customer-2.theme-3 .sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .customer-2.theme-3 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   transform: scale(1);
-  background: #FBB217;
+  background: wheat;
 }
 
 .latest-blog-3 .sm-title {
-  color: #FBB217;
+  color: wheat;
 }
 
 .latest-blog-3 .post-title:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .latest-blog-3 .view-more:hover {
-  color: #FBB217;
-  border-color: #FBB217;
+  color: wheat;
+  border-color: wheat;
 }
 
 .header .container {
@@ -4109,8 +4107,8 @@ ul.social-ul {
 /*  Header menu CSS  */
 
 .header-menu li a {
-  font-size: 15px;
-  color: #292929c9;
+  font-size: 18px;
+  color: wheat;
   display: block;
   transition: 0.3s;
   padding: 20px 0;
@@ -4148,7 +4146,7 @@ ul.social-ul {
 }
 
 .header-2.theme-3 .header-menu .submenu {
-  border-top: 3px solid #FBB217;
+  border-top: 3px solid wheat;
 }
 
 .header-2 .icon-item {
@@ -4160,7 +4158,7 @@ ul.social-ul {
 }
 
 .header-2.theme-3 .icon-item:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .header-2.theme-3 .icon-item {
@@ -4176,11 +4174,11 @@ ul.social-ul {
 }
 
 .header-2 .header-menu li:hover>a {
-  color: #79a1bb;
+  color: white;
 }
 
 .header-2.theme-3 .header-menu li:hover>a {
-  color: #FBB217;
+  color: wheat;
 }
 
 .header-menu ul li .submenu li {
@@ -4272,7 +4270,7 @@ ul.social-ul {
 }
 
 .header-2.theme-3 .dr-navbar-sign:hover span {
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .dr-navbar-sign:hover span.dr-line-2 {
@@ -4328,7 +4326,7 @@ ul.social-ul {
 }
 
 .header-side-info-3 .mean-container .mean-nav ul li:hover>a {
-  color: #FBB217;
+  color: wheat;
 }
 
 .mean-container .mean-nav ul li a.mean-expand {
@@ -4354,7 +4352,7 @@ ul.social-ul {
 }
 
 .header-side-info-3 .mean-container .mean-nav ul li a.mean-expand:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .dr-sidebar-contact-title {
@@ -4393,7 +4391,7 @@ ul.social-ul {
 }
 
 .header-side-info-3 .dr-sidebar-contact>a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .dr-sidebar-contact>a i {
@@ -4449,7 +4447,7 @@ ul.social-ul {
 }
 
 .header-side-info-3 .dr-sidebar-close:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .dr-sidebar-btn-wrap a {
@@ -4475,7 +4473,7 @@ ul.social-ul {
 }
 
 .header-side-info-3 .dr-sidebar-btn-wrap a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .offcanvas-overlay:is(.overlay-open) {
@@ -5365,7 +5363,7 @@ Update Css For Home 4 & Home 5
   color: #fff;
   font-weight: 500;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hero4-title {
@@ -5401,7 +5399,7 @@ Update Css For Home 4 & Home 5
   border: 0;
   transform: translateY(-50%);
   border-radius: 3px;
-  background-color: #FBB217;
+  background-color: wheat;
   color: #fff;
   font-size: 20px;
 }
@@ -5712,7 +5710,7 @@ Update Css For Home 4 & Home 5
 }
 
 .cb-top-restaurant-title:hover a {
-  color: #FBB217;
+  color: wheat;
 }
 
 .cb-top-restaurant-categories-meta a {
@@ -5727,7 +5725,7 @@ Update Css For Home 4 & Home 5
 
 .cb-top-restaurant-categories-meta a:hover {
   color: #fff;
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .cb-top-restaurant-location-time {
@@ -5752,7 +5750,7 @@ Update Css For Home 4 & Home 5
 }
 
 .cb-top-location-time .cb-top-restaurant-meta:first-child {
-  color: #FBB217;
+  color: wheat;
 }
 
 .border-topp {
@@ -5781,7 +5779,7 @@ Update Css For Home 4 & Home 5
 .cb-offer-cta-content-subtitle {
   font-size: 22px;
   font-family: 'lobster two';
-  color: #FBB217;
+  color: wheat;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -5795,7 +5793,7 @@ Update Css For Home 4 & Home 5
 .offer-btn {
   height: 45px;
   line-height: 45px;
-  background-color: #FBB217;
+  background-color: wheat;
   color: #fff;
   display: inline-block;
   padding: 0 25px;
@@ -5826,7 +5824,7 @@ Update Css For Home 4 & Home 5
 }
 
 .cb-team-single-name a:hover {
-  color: #FBB217;
+  color: wheat;
 }
 
 .cb-team-single-content {
@@ -5840,7 +5838,7 @@ Update Css For Home 4 & Home 5
   bottom: 0;
   width: 60%;
   height: 3px;
-  background-color: #FBB217;
+  background-color: wheat;
   content: "";
   margin-left: -30%;
   display: inline-block;
@@ -5967,7 +5965,7 @@ span.sm-title.sm-title2 {
 
 .cb-slider-list li i {
   font-size: 16px;
-  background-color: #FBB217;
+  background-color: wheat;
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
@@ -5977,7 +5975,7 @@ span.sm-title.sm-title2 {
 .cb-slider-button {
   height: 45px;
   line-height: 45px;
-  background-color: #FBB217;
+  background-color: wheat;
   display: inline-block;
   padding: 0 25px;
   border-radius: 3px;
@@ -5992,13 +5990,13 @@ span.sm-title.sm-title2 {
 
 .second-button {
   background-color: transparent;
-  border: 1px solid #FBB217;
-  color: #FBB217;
+  border: 1px solid wheat;
+  color: wheat;
   transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .second-button:hover {
-  background-color: #FBB217;
+  background-color: wheat;
   color: #fff;
   box-shadow: 0 0 10px 5px rgba(251, 178, 23, 0.5);
 }
@@ -6011,7 +6009,7 @@ span.sm-title.sm-title2 {
 }
 
 .cb-slide-sup-price {
-  color: #FBB217;
+  color: wheat;
   font-size: 16px;
   display: inline-block;
   transform: translateY(-18px);
@@ -6020,7 +6018,7 @@ span.sm-title.sm-title2 {
 }
 
 .home5-slider .banner-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .dark-mode {
@@ -6079,7 +6077,7 @@ span.sm-title.sm-title2 {
 
 .tabs .tab-links .item-link.current {
   pointer-events: none;
-  color: #FBB217;
+  color: wheat;
 }
 
 .position-re {
@@ -6148,7 +6146,7 @@ span.sm-title.sm-title2 {
   margin-left: auto;
   font-family: 'oswald';
   font-size: 18px;
-  color: #FBB217;
+  color: wheat;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -6180,7 +6178,7 @@ span.sm-title.sm-title2 {
 .cb-item-btn {
   height: 45px;
   line-height: 45px;
-  background-color: #FBB217;
+  background-color: wheat;
   display: inline-block;
   padding: 0 25px;
   border-radius: 3px;
@@ -6205,7 +6203,7 @@ span.sm-title.sm-title2 {
 }
 
 .customer.customer-2.theme-3.dark-mode .swiper-pagination-bullet-active {
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .dark-mode.customer-2.theme-3 span.swiper-pagination-bullet {
@@ -6231,7 +6229,7 @@ span.sm-title.sm-title2 {
 
 
 .all-product.product-3 .cat-menu.justify-content-center.nav a.cat-menu-li.nav-link.active {
-  color: #FBB217;
+  color: wheat;
 }
 
 .all-product.all-product-1 .product-inner.cpy-8 {
@@ -6239,7 +6237,7 @@ span.sm-title.sm-title2 {
 }
 
 .availability.mb-120 {
-  background-image: url(../public/img/subscribe-bg.png);
+  background-image: url(../public/img/v2/about/background-schedule.jpeg);
 }
 
 .partner.cmy-8 {
@@ -6398,15 +6396,15 @@ a.qt-btn.product-table-delete-btn {
 }
 
 .banner-4.banner-one {
-  background-image: url(../public/img/slider/slider5_bg.jpg);
+  background-image: url(../public/img/v2/home/carousel-1.jpeg);
 }
 
 .banner-4.banner-two {
-  background-image: url(../public/img/slider/slider5_1bg.jpg);
+  background-image: url(../public/img/v2/home/carousel-2.jpeg);
 }
 
 .banner-4.banner-three {
-  background-image: url(../public/img/slider/slider5_2bg.jpg);
+  background-image: url(../public/img/v2/home/carousel-2.jpeg);
 }
 
 .col-md-6.menu-book-column .menu-list {
@@ -6529,11 +6527,11 @@ p.no-page-found-text {
 }
 
 .yellow-theme button.searchbar-btn {
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .yellow-theme input.searchbar-form:focus-visible {
-  border: 1px solid #FBB217;
+  border: 1px solid wheat;
 }
 
 .shop-product-img.w-100 img {
@@ -6755,7 +6753,7 @@ span.blog-category-span.active {
 }
 
 .header-2.theme-3 .no-product-cart-dropdown-container .custom-btn {
-  background-color: #FBB217;
+  background-color: wheat;
 }
 
 .header-2.theme-3 .no-product-cart-dropdown-container .custom-btn:hover {
@@ -6781,8 +6779,8 @@ a.shop-btn.active {
 }
 
 .product-3 .cat-menu-li.nav-link.active span.cat-name {
-  color: #FBB217;
-  border-bottom: 2px solid #FBB217;
+  color: wheat;
+  border-bottom: 2px solid wheat;
   padding-bottom: 5px;
 }
 
@@ -6872,7 +6870,7 @@ nav.mobile-menu-nav ul li a.active {
 }
 
 .header-2.theme-3 .header-menu ul.submenu li a.active {
-  color: #FBB217;
+  color: wheat;
   background-color: #f2f2f2;
 }
 
@@ -11785,12 +11783,14 @@ a.custom-btn-2:hover {
   margin: 0;
   line-height: 1.2;
   font-family: 'oswald';
+  color: white;
 }
 .logo a {
   font-size: 24px;
   font-family: "Lobster Two", cursive;
   font-weight: 500;
   margin: 0;
+  color: wheat;
 }
 
 .button-tag {
@@ -11923,14 +11923,12 @@ table.table tr {
 
 @keyframes pulse-number {
   0% {
-    color: #000;
   }
   50% {
     box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
     font-size: 1.5em;
   }
   100% {
-    color: #000;
   }
 }
 
