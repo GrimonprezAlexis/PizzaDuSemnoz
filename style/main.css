@@ -1152,7 +1152,6 @@ img.app-one {
 /* ====================responsive======== */
 
 @media screen and (max-width: 767px) {
-
   /* .app-section {
     margin: 0 !important;
     padding-top: 0 !important;
@@ -4781,6 +4780,9 @@ ul.social-ul {
 .pt-15 {
   padding-top: 15px;
 }
+.pt-30 {
+  padding-top: 30px;
+}
 
 .signle-comment-title {
   font-size: 24px;
@@ -8151,6 +8153,14 @@ button.ad-cart-img-header-btn:hover .ad-cart-count {
 
   .ad-responsive-navbar {
     display: block;
+  }
+    
+  .flex-between-align-start {
+    display: block!important;
+  }
+  .available-note {
+    position: relative;
+    margin: 2rem 0;
   }
 }
 
@@ -11831,6 +11841,13 @@ a.custom-btn-2:hover {
 
 .footer-logo h3 {
   color: wheat;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* Table */

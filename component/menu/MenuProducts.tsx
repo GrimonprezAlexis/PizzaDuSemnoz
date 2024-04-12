@@ -143,9 +143,15 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
                   <h4 className="sidebar-title mb-25">Nos différentes pizzas</h4>
                   <div className="sidebar-tags">{renderCategoryButtons()}</div>
 
-                  <div className="input-group">
-                    <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscribtion-input" value={searchQuery} onChange={handleSearchChange} />
-                    <button type="submit" className="custom-btn">
+                  <div className="input-group mt-10">
+                    <input
+                      type="text"
+                      placeholder="Rechercher par ingrédient..."
+                      className="form-control subscribtion-input mt-4"
+                      value={searchQuery}
+                      onChange={handleSearchChange}
+                    />
+                    <button type="submit" className="custom-btn mt-25">
                       <span className="icofont-search-1"></span>
                     </button>
                   </div>

@@ -10,7 +10,7 @@ const BannerSection4 = () => {
         <Swiper
           className="swiper bannerSlider"
           loop={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 4000 }}
           pagination={{
             el: '.banner-pagination',
             dynamicBullets: true,
@@ -42,10 +42,10 @@ const BannerSection4 = () => {
                             </ul>
                           </div>
                           <div className="cb-slider-buttons d-flex align-items-center justify-content-center justify-content-md-start mt-50">
-                            <a className="cb-slider-button" href="#">
-                              Commander maintenant
+                            <a className="cb-slider-button" href="/menu">
+                              Voir les Pizzas
                             </a>
-                            <a className="cb-slider-button second-button" href="#">
+                            <a className="cb-slider-button second-button" href="tel:+0664541850">
                               06 64 54 18 50
                             </a>
                           </div>

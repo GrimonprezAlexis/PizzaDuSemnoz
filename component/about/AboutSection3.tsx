@@ -7,7 +7,7 @@ interface AboutProp {
 const AboutSection3: React.FC<AboutProp> = ({ style }) => {
   return (
     <section>
-      <div className={`about about-3 ${style} pt-75 pb-10`}>
+      <div className={`about about-3 ${style} pt-30 pb-10`}>
         <div className="container">
           <div className="flex-between-align-start">
             <div className="col-md-6 col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1000">

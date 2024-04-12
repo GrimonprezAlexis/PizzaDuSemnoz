@@ -18,7 +18,7 @@ const HomeMain5 = () => {
       {/* <OfferCtaSection /> */}
       <InfoSection />
       {/* <MenuBookSection /> */}
-      <PartnerSection />
+      {/* <PartnerSection /> */}
       <FooterSection style="footer-3 dark-mode border-tp" />
       <ToastContainer />
     </div>

@@ -26,35 +26,9 @@ const AboutSection = () => {
                     <br></br>
                     Et pour couronner le tout, nous utilisons les meilleurs fromages de la région pour enchanter vos papilles.
                   </p>
-                  <div className="service-list">
-                    <ul className="service-ul">
-                      <li className="ab-service-li mb-4">
-                        <div className="service-icon">
-                          <img src="img/icon/5.png" alt="" />
-                        </div>
-                        <div className="service-name-des">
-                          <h4 className="service-name mb-1">Buffet Service</h4>
-                          <p className="service-des">
-                            Qariatureaque ipsa quae a illo inventore <br /> veritatis et quasi architecto
-                          </p>
-                        </div>
-                      </li>
-                      <li className="ab-service-li mb-4">
-                        <div className="service-icon">
-                          <img src="img/icon/6.png" alt="" />
-                        </div>
-                        <div className="service-name-des">
-                          <h4 className="service-name mb-1">Online Booking</h4>
-                          <p className="service-des">
-                            Qariatureaque ipsa quae a illo inventore <br /> veritatis et quasi architecto
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
                   <div className="service-button-wrap mt-40">
-                    <Link href="/about" className="custom-btn">
-                      About Us
+                    <Link href="/menu" className="custom-btn">
+                      Voir les Pizzas
                     </Link>
                   </div>
                 </div>

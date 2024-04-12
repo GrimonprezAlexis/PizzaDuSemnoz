@@ -21,7 +21,9 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
                 <img src="/img/logo/logo-pizza.png" alt="Logo not found" className="logo-img" />
               </Link>
               <div className="logo-text-2">
-                <h3>Pizza Du Semnoz</h3>
+                <Link href="/">
+                  <h3>Pizza Du Semnoz</h3>
+                </Link>
                 <Link className="kf-pulse-number logo-text-red" href="tel:+0664541850">
                   <i className="icofont-phone"></i> 06 64 54 18 50
                 </Link>
