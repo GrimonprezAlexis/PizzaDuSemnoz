@@ -2974,9 +2974,6 @@ ul.service-list li {
   color: #cc3333;
 }
 
-tbody.table-body-text tr td {
-  padding-top: 0;
-}
 
 /* ====================================pricing table ========= */
 
@@ -3489,9 +3486,7 @@ ul.post-list {
   background: #292929;
 }
 
-table.table tr {
-  vertical-align: middle;
-}
+
 
 .shopping-btn {
   display: flex;
@@ -3535,10 +3530,6 @@ td.cart-price {
 .submit-cart {
   text-align: center;
   margin-top: 25px;
-}
-
-table.table {
-  /* white-space: nowrap; */
 }
 
 .input-group.quantity {
@@ -3595,10 +3586,6 @@ table.info-table tbody tr {
 
 .team-about {
   margin-bottom: 35px;
-}
-
-tbody.table-body-text {
-  color: #666666;
 }
 
 .card-title {
@@ -3724,10 +3711,6 @@ ul.info-list {
 
 .delivery-text {
   color: #cc3333;
-}
-
-.table> :not(:first-child) {
-  border-top: none;
 }
 
 thead.product-table {
@@ -10685,6 +10668,10 @@ a.ad-menu-img-container {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+
+  img {
+    width: 150px;
+  }
 }
 
 .ad-menu-qr-code-container p {
@@ -11827,34 +11814,58 @@ a.custom-btn-2:hover {
 }
 /* Table */
 .table {
-  width: 100%;
   border-collapse: collapse;
+  color: #363636;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-/* Table Header */
+.table> :not(:first-child) {
+  border-top: none;
+}
+
+tbody.table-body-text {
+  color: #666666;
+}
+
+tbody.table-body-text tr td {
+  padding-top: 0;
+}
+
+table.table tr {
+  vertical-align: middle;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.gray-600 {
+  color: #6c757d!important;;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa!important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.table thead th {
+  padding: .75rem;
+  vertical-align: bottom;
+}
+
 .table th {
-  background-color: #f2f2f2; /* Header background color */
-  color: #333; /* Header text color */
-  font-weight: bold;
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #dee2e6;
+  padding: .75rem;
+  vertical-align: top;
 }
-
-/* Table Body */
 .table td {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Alternate Row Color */
-.table tr:nth-child(even) {
-  background-color: #fff;
-}
-
-/* Hover Effect */
-.table tbody tr:hover {
-  background-color: #f9f9f9;
+  border-top: 1px solid #dee2e6;
+  padding: .75rem;
+  vertical-align: top;
 }
 
 .menu-product-title {
@@ -11915,7 +11926,6 @@ a.custom-btn-2:hover {
     color: #000;
   }
   50% {
-    color: #cc3333;
     box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
     font-size: 1.5em;
   }

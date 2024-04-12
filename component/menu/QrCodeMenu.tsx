@@ -10,7 +10,7 @@ const QrCodeMenu = () => {
             <br className="d-none d-lg-block" />
             pour voir le Menu Complet
           </p>
-          <img src="/img/aida-images/menu-qr-code.png" alt="" />
+          <img src="/img/v2/qr-code.png" alt="Qr Code" />
         </div>
       </div>
     </section>

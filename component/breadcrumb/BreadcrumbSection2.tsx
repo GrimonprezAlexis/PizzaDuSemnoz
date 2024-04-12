@@ -9,7 +9,7 @@ const BreadcrumbSection2 = ({currentPage} : Props) => {
         <div className="ad-menu-banner position-relative">
             <div className="ad-menu-banner-overlay">
                 <div>
-                    <Link href="/">Home /</Link>
+                    <Link href="/">Accueil /</Link>
                     <Link className="selected-page" href="#"> {currentPage}</Link>
                 </div>
             </div>

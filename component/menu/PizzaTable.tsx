@@ -8,14 +8,24 @@ export interface Pizza {
 }
 
 const PizzaTable: React.FC<{ pizzas: Pizza[]; highlightedWord: string }> = ({ pizzas, highlightedWord }) => (
-  <table className="table table-striped">
+  <table className="table">
     <thead>
-      <tr>
-        <th scope="col">Pizza</th>
-        <th scope="col">Ingrédients</th>
-        <th scope="col">Ø 26 cm</th>
-        <th scope="col">Ø 33 cm</th>
-        <th scope="col">Ø 50 cm</th>
+      <tr className="bg-gray-100 text-uppercase gray-600">
+        <th scope="col" className="border-0">
+          Pizza
+        </th>
+        <th scope="col" className="border-0">
+          Ingrédients
+        </th>
+        <th scope="col" className="border-0">
+          Ø 26 cm
+        </th>
+        <th scope="col" className="border-0">
+          Ø 33 cm
+        </th>
+        <th scope="col" className="border-0">
+          Ø 50 cm
+        </th>
       </tr>
     </thead>
     <tbody>
