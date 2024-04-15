@@ -12072,3 +12072,38 @@ a.custom-btn-2:hover {
   border: 1px solid #00000091;
   box-shadow: 1px 1px 1px black;
 }
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-banner p {
+  margin: 0;
+}
+
+.customize-link,
+.ok-button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: wheat;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.customize-link:hover,
+.ok-button:hover {
+  background-color: #af7a31;
+}

@@ -155,7 +155,7 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
               <div>
                 <ul className="social-ul">
                   <li className="social-list">
-                    <a href="#" className="social-link">
+                    <a href="https://www.facebook.com/pizzadusemnozseynod/?fref=ts" target="_blank" className="social-link">
                       <span className="icofont-facebook"></span>
                     </a>
                   </li>

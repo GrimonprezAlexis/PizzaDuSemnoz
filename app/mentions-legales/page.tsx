@@ -8,7 +8,7 @@ export default function MentionsLegales() {
         <BreadcrumbSection title={'Mentions légales'} header={'Mentions légales'} />
         <div id="content" className="container-fluid">
           <h1>
-            <span>Mentions Légales &amp;politique de confidentialité</span>
+            <span>Mentions Légales &amp; Politique de confidentialité</span>
           </h1>
           <div id="topic" className="row-fluid">
             <div id="topic-inner">

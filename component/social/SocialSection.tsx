@@ -8,7 +8,7 @@ const SocialSection: React.FC<SocialProps> = ({ style }) => {
       <div className="right-social">
         <ul className="right-social-ul">
           <li>
-            <a href="#" className="share-link">
+            <a href="https://www.facebook.com/pizzadusemnozseynod/?fref=ts" target="_blank" className="share-link">
               Facebook
             </a>
           </li>
