@@ -12,7 +12,7 @@ const PizzaTable: React.FC<{ pizzas: Pizza[]; highlightedWord: string }> = ({ pi
     <p style={{ textAlign: 'right', marginRight: '15px' }}>Ø 26 cm - Ø 33 cm - Ø 50 cm</p>
     <div className="pizza-list">
       {pizzas.map((pizza, index) => (
-        <div className="pizza-item" key={index}>
+        <div className="pizza-item" key={index} data-aos="fade-right" data-aos-duration="1000">
           <div className="pizza-wrapper" key={index}>
             <h3>🍕 {pizza.name}</h3>
             <div className="prices">

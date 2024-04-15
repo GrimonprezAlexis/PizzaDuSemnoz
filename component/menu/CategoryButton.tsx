@@ -10,7 +10,7 @@ interface CategoryButtonProps {
 
 const CategoryButton: React.FC<CategoryButtonProps> = ({ category, title, onClick, isActive }) => {
   return (
-    <button onClick={onClick} className={`button-tag ${isActive ? 'button-tag-active' : ''}`}>
+    <button onClick={onClick} className={`button-tag ${isActive ? 'button-tag-active' : ''}`} data-aos={isActive ? 'zoom-in' : ''}>
       {title}
     </button>
   );

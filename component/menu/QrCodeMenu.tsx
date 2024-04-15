@@ -2,7 +2,7 @@ import React from 'react';
 
 const QrCodeMenu = () => {
   return (
-    <section>
+    <section data-aos="fade-left" data-aos-duration="500">
       <div className="ad-menu-qr-code">
         <div className="ad-menu-qr-code-container">
           <p>

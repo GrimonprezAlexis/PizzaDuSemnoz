@@ -12023,12 +12023,13 @@ a.custom-btn-2:hover {
   margin-bottom: 10px;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
+  
 }
 
 .pizza-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .pizza-item h3 {
@@ -12064,4 +12065,10 @@ a.custom-btn-2:hover {
 
 .pizza-item .prices span:last-child {
   margin-right: 0;
+}
+
+.subscribtion-input {
+  background: none;
+  border: 1px solid #00000091;
+  box-shadow: 1px 1px 1px black;
 }

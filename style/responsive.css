@@ -744,6 +744,15 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .pizza-item h3 {
+        font-size: 14px;
+    }
+    .sidebar-tags {
+        justify-content: flex-start;
+    }
+}
+
 @media screen and (min-width: 401px) and (max-width: 575px) {
     .footer-link img {
         height: 124px;

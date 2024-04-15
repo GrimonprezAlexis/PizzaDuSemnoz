@@ -111,7 +111,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
   const renderPizzaTables = () => {
     return Object.entries(pizzasByCategory).map(([category, pizzas]) => (
       <div key={category}>
-        <div className={`row menu-product-title bg-${getTitleBackgroundColor(category)}`}>
+        <div className={`row menu-product-title bg-${getTitleBackgroundColor(category)}`} data-aos="zoom-in">
           <h3>{PizzaTitle[category as keyof typeof PizzaCategory]}</h3>
         </div>
         <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} />
@@ -136,7 +136,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
         <section className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="sidebar-default pl-25">
+              <div className="sidebar-default pl-25 mt-4">
                 <div className="sidebar-single" data-aos="fade-up" data-aos-duration="500">
                   <h4 className="sidebar-title mb-25">Nos différentes pizzas</h4>
                   <div className="sidebar-tags">{renderCategoryButtons().slice(0, 4)}</div>

@@ -1155,7 +1155,7 @@ const classicPizzas = [
   {
     name: 'Calzone',
     ingredients: 'Sauce tomate, jambon, champignons frais, sauce crème, oeuf, fromage',
-    prices: ['12.00€', '15.00€', 'Indisponible'],
+    prices: ['12.00€', '15.00€', '-'],
     category: PizzaCategory.CLASSIQUES,
   },
   {
