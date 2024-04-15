@@ -1453,7 +1453,7 @@
 
     .availability {
         margin-top: 0;
-        margin-bottom: 325px;
+        margin-bottom: 20px;
     }
 
     .reply-comment {
@@ -1667,7 +1667,7 @@
         padding: 40px 0;
     }
     .ad-menu-qr-code {
-        margin-top: 80px;
+        margin-top: 20px;
     }
     .ad-offer-responsive-dotted {
         display: none;
@@ -1926,8 +1926,8 @@
 
     /* quick view */
     .cpy-8 {
-        padding-top: 55px;
-        padding-bottom: 55px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .cpy-6 {

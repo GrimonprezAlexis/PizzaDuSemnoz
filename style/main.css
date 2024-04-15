@@ -36,7 +36,7 @@ Don't forgot your feedback or ratings.
 /* ====end CSS Variable=== */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat';
   color: #666666;
   font-size: 15px;
   line-height: 25px;
@@ -56,7 +56,7 @@ h6 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat';
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 15px;
@@ -332,7 +332,7 @@ img {
 .logo-text h3 {
   margin: 0;
   font-family: cursive;
-  letter-spacing: 1.02px;
+  letter-spacing: 1.025px;
   color: white;
 }
 .logo-text-2 h3 {
@@ -481,6 +481,7 @@ ul.right-social-ul li {
 
 .serv-list .list-des p {
   margin-bottom: 0;
+  text-align: initial;
 }
 
 .mb-15 {
@@ -539,6 +540,7 @@ ul.right-social-ul li {
   -moz-transition: 0.6s;
   -ms-transition: 0.6s;
   -o-transition: 0.6s;
+  height: 340px;
 }
 
 .feature-card:hover {
@@ -1158,7 +1160,7 @@ img.app-one {
     padding-bottom: 0;
   } */
   .availability {
-    margin-top: 105px;
+    margin-top: 20px;
   }
 }
 
@@ -1568,7 +1570,7 @@ ul.rating li span.unrated {
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 7rem;
 }
 
 .shop-btn:hover {
@@ -4260,20 +4262,12 @@ ul.social-ul {
 
 .dr-navbar-sign span {
   width: 20px;
-  height: 2px;
-  background-color: #292929;
+  height: 3px;
+  background-color: wheat;
   border-radius: 50px;
   display: block;
   margin: 4px 0;
   transition: all 0.6s ease-in-out;
-}
-
-.dr-navbar-sign span.dr-line-2 {
-  width: 15px;
-}
-
-.dr-navbar-sign span.dr-line-3 {
-  width: 10px;
 }
 
 .dr-navbar-sign:hover span {
@@ -5972,7 +5966,7 @@ span.sm-title.sm-title2 {
 }
 
 .cb-slider-list li {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   font-family: 'oswald';
 }
@@ -6014,8 +6008,6 @@ span.sm-title.sm-title2 {
 }
 
 .second-button:hover {
-  background-color: wheat;
-  color: #fff;
   box-shadow: 0 0 10px 5px rgba(251, 178, 23, 0.5);
 }
 
@@ -6559,7 +6551,8 @@ p.no-page-found-text {
 .sidebar-tags {
   flex-wrap: wrap;
   display: flex;
-  gap: 5px;
+  gap: 8px;
+  justify-content: center;
 }
 
 ul.sidebar-tags li {
@@ -6848,6 +6841,7 @@ nav.mobile-menu-nav ul li a {
   display: flex;
   justify-content: space-between;
   padding-left: 5px;
+  font-size: 18px;
 }
 
 span.mobile-menu-expand {
@@ -6869,7 +6863,7 @@ nav.mobile-menu-nav ul li a.active {
 }
 
 .header-default .header-menu li a.active {
-  color: #cc3333;
+  color: #cc3333!important;
 }
 
 .header-default .header-menu ul.submenu li a.active {
@@ -11102,7 +11096,7 @@ a.ad-menu-img-container {
 @media screen and (max-width:991px) {
 
   .reservation-page-subscribe {
-    margin-top: 325px;
+    margin-top: 20px;
   }
 
   .reservation-page-title-container p {
@@ -11850,28 +11844,8 @@ a.custom-btn-2:hover {
   margin-top: 2rem;
 }
 
-/* Table */
-.table {
-  border-collapse: collapse;
-  color: #363636;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.table> :not(:first-child) {
-  border-top: none;
-}
-
-tbody.table-body-text {
-  color: #666666;
-}
-
-tbody.table-body-text tr td {
-  padding-top: 0;
-}
-
-table.table tr {
-  vertical-align: middle;
+.black {
+  color: black!important;
 }
 
 .text-uppercase {
@@ -11888,22 +11862,6 @@ table.table tr {
 
 .border-0 {
   border: 0 !important;
-}
-
-.table thead th {
-  padding: .75rem;
-  vertical-align: bottom;
-}
-
-.table th {
-  border-top: 1px solid #dee2e6;
-  padding: .75rem;
-  vertical-align: top;
-}
-.table td {
-  border-top: 1px solid #dee2e6;
-  padding: .75rem;
-  vertical-align: top;
 }
 
 .menu-product-title {
@@ -11975,6 +11933,25 @@ table.table tr {
 	animation: pulse-number 1.5s infinite;
 }
 
+.kf-pulse-red {
+  box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
+  animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+  }
+}
 
 .kf-pulse-yellow {
 	box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
@@ -11996,4 +11973,95 @@ table.table tr {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
 	}
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dee2e6;
+  font-family: 'Montserrat';
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+}
+
+.pizza-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.pizza-item {
+  margin-bottom: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.pizza-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pizza-item h3 {
+  margin: 0;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 4px 8px;
+  font-family: 'Montserrat';
+}
+
+.pizza-item p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  margin-right: 10px;
+  font-family: 'Montserrat';
+}
+
+.pizza-item .prices {
+  margin-top: 10px;
+}
+
+.pizza-item .prices span {
+  margin-right: 15px;
+  font-weight: 300
+}
+
+.pizza-item .prices span:hover {
+  font-weight: bold
+}
+
+.pizza-item .prices span:last-child {
+  margin-right: 0;
 }

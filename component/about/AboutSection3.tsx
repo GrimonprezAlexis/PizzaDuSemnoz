@@ -27,25 +27,25 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
                   <ul className="about-ul">
                     <li>
                       <div className="serv-list">
-                        <img src="img/icon/3-7.png" alt="Image not found" />
+                        <img src="img/icon/3-8.png" alt="Image not found" />
                         <div className="list-des">
-                          <h4 className="list-title">Rating Star</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                          <h4 className="list-title">Format 50cm</h4>
+                          <p>Avis à tous les gourmands, format 50 cm pour toutes les pizzas de notre carte !</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div className="serv-list">
-                        <img src="img/icon/3-8.png" alt="Image not found" />
+                        <img src="img/icon/3-7.png" alt="Image not found" />
                         <div className="list-des">
-                          <h4 className="list-title">Free species</h4>
-                          <p>Lorem ipsum dolor sit amet, cosectetur adipisicing elit.</p>
+                          <h4 className="list-title">Saveurs Authentiques</h4>
+                          <p>Inspirées des délices de la Savoie, pour un goût mémorable.</p>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <Link href="/about" className="cb-slider-button second-button">
+                <Link href="/about" className="cb-slider-button second-button kf-pulse-yellow">
                   En Savoir Plus
                 </Link>
               </div>

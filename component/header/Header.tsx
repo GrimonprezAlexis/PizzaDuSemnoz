@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
             </div>
             <div className="header-right">
               <div className="header-menu d-none d-lg-block">
-                <NavigationSection />
+                <NavigationSection classStyle="black" />
               </div>
               <div className="header-right-search-phone d-none d-lg-block ml-35">
                 <a className="header-search" id="search" role="button" onClick={openSearchbarModal}>

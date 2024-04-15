@@ -43,10 +43,6 @@ const InfoSection = () => {
           </div>
           <div className="col-xl-6 col-lg-6 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="1500">
             <BlogSlider />
-
-            {/* <div className="cb-item-info-img w-100 mb-40 pl-50 text-lg-end">
-              <img src="img/image/dish.png" alt="img" />
-            </div> */}
           </div>
         </div>
       </div>

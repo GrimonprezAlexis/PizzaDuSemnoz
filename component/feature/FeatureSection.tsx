@@ -6,7 +6,7 @@ const FeatureSection = () => {
   return (
     <div className="feature cpy-8">
       <div className="container">
-        <div className="row justify-content-center mt-30">
+        <div className="row justify-content-center mt-50">
           {serviceList.slice(6, 10).map((item) => (
             <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6 mb-4" key={item.id}>
               <div className="feature-card" data-aos="fade-up" data-aos-duration="1000">
@@ -20,9 +20,6 @@ const FeatureSection = () => {
                     <a href={`/service/${item.slug}`}>{item.title}</a>
                   </h3>
                   <p className="feature-des">{item.desc}</p>
-                  <a href={`/service/${item.slug}`} className="discover-bt">
-                    Discover More
-                  </a>
                 </div>
               </div>
             </div>

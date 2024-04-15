@@ -14,8 +14,8 @@ const ScheduleSection = () => {
               <div className="row">
                 <div className="col-md-6 col-xl-8 col-lg-7 my-2" data-aos="fade-right" data-aos-duration="1000">
                   <div className="available-content">
-                    <a className="video-btn play-video" role="button" onClick={openVideoModal}>
-                      <span className="icofont-ui-play"></span>
+                    <a className="video-btn play-video" role="button">
+                      <span className="icofont-pizza-slice" style={{ fontSize: '1.5rem' }}></span>
                     </a>
                     <h2 className="available-head">24h/7j : Dégustez nos pizzas 24h/7j</h2>
                     <p className="mb-0">avec un distributeur de pizza à votre disposition derrière le chalet </p>

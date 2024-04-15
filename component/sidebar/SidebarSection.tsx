@@ -1,33 +1,39 @@
-'use client'
-import { useCafeuContext } from "@/context/CafeuContext";
-import Link from "next/link";
-import React from "react";
-import MobileNavigationSection from "../navigation/MobileNavigationSection";
+'use client';
+import { useCafeuContext } from '@/context/CafeuContext';
+import Link from 'next/link';
+import React from 'react';
+import MobileNavigationSection from '../navigation/MobileNavigationSection';
 interface SidebarProps {
-  logo:string,
+  logo: string;
 }
-const SidebarSection:React.FC<SidebarProps> = ({logo}) => {
+const SidebarSection: React.FC<SidebarProps> = ({ logo }) => {
   const { isSidebarOpen, closeSidebar, cartItemAmount } = useCafeuContext();
-
 
   return (
     <>
-      <div className={`dr-sidebar-info side-info ${isSidebarOpen? 'info-open':''}`}>
+      <div className={`dr-sidebar-info side-info ${isSidebarOpen ? 'info-open' : ''}`}>
         <div className="dr-sidebar-logo-wrapper mb-25">
           <div className="row align-items-center">
-            <div className="col-xl-6 col-8">
+            <div className="col-xl-6 col-10">
               <div className="dr-sidebar-logo">
-                <Link href="/">
-                  <img src={logo} alt="logo-img" />
-                </Link>
+                <div className="logo">
+                  <Link href="/">
+                    <img src="/img/logo/logo-pizza.png" alt="Logo not found" className="logo-img" />
+                  </Link>
+                  <div className="logo-text-2">
+                    <Link href="/">
+                      <h3>Pizza Du Semnoz</h3>
+                    </Link>
+                    <Link className="logo-text-red" href="tel:+0664541850">
+                      <i className="icofont-phone"></i> 06 64 54 18 50
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-xl-6 col-4">
+            <div className="col-xl-6 col-2">
               <div className="dr-sidebar-close-wrapper text-end">
-                <button 
-                className="dr-sidebar-close side-info-close"
-                onClick={closeSidebar}
-                >
+                <button className="dr-sidebar-close side-info-close" onClick={closeSidebar}>
                   <i className="icofont-close-line"></i>
                 </button>
               </div>
@@ -37,57 +43,26 @@ const SidebarSection:React.FC<SidebarProps> = ({logo}) => {
 
         <div className="dr-sidebar-menu-wrapper fix">
           <div className="cf-header-menu mean-container">
-            <MobileNavigationSection/>
+            <MobileNavigationSection />
           </div>
-        </div>
-
-        <div className="dr-sidebar-btn-wrap mt-40">
-          <Link href="/cart">
-            <span className="icofont-shopping-cart">
-              <span className="cart-count">{cartItemAmount}</span>
-            </span>
-          </Link>
-          <Link href="/my-account">
-            <i className="icofont-ui-user"></i>
-          </Link>
         </div>
 
         <div className="dr-sidebar-contact-wrapper mt-40">
           <div className="dr-sidebar-contact mb-40">
-            <h4 className="dr-sidebar-contact-title">Contact Info</h4>
+            <h4 className="dr-sidebar-contact-title">Contact</h4>
             <span className="sidebar-address">
               <i className="icofont-google-map"></i>
-              <span>4929 Thorn Street Crow heart, WY 82512</span>{" "}
-            </span>
-            <a href="tel:+1(251)410-1010">
-              <i className="icofont-phone"></i>
-              <span>+1 (251) 410-1010</span>
-            </a>
-            <a href="mailto:example@gmail.com" className="theme-3">
-              <i className="icofont-envelope-open"></i>
               <span>
-                <span>example@gmail.com</span>
+                18 Av. d'Aix-les-Bains, <br></br>74600 Seynod, France
               </span>
-            </a>
-          </div>
-
-          <div className="dr-sidebar-social mt-40 mb-30">
-            <a href="#" className="facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="twitter">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="linkedin">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" className="youtube">
-              <i className="fab fa-dribbble"></i>
+            </span>
+            <a className="" href="tel:+0664541850">
+              <i className="icofont-phone"></i> 06 64 54 18 50
             </a>
           </div>
         </div>
       </div>
-      <div className={`offcanvas-overlay ${isSidebarOpen? 'overlay-open':''}`} role="button" onClick={closeSidebar}></div>
+      <div className={`offcanvas-overlay ${isSidebarOpen ? 'overlay-open' : ''}`} role="button" onClick={closeSidebar}></div>
     </>
   );
 };

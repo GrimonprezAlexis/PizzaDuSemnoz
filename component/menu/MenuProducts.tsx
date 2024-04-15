@@ -70,8 +70,6 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
     pizzasByCategory[pizza.category]?.push(pizza);
   });
 
-  console.log('filteredPizzas', filteredPizzas);
-
   const handleCategoryClick = (category: PizzaCategory) => {
     setSelectedCategory(category);
   };
@@ -139,24 +137,19 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
           <div className="row">
             <div className="col-lg-12">
               <div className="sidebar-default pl-25">
-                <div className="sidebar-single mb-50" data-aos="fade-up" data-aos-duration="500">
+                <div className="sidebar-single" data-aos="fade-up" data-aos-duration="500">
                   <h4 className="sidebar-title mb-25">Nos différentes pizzas</h4>
-                  <div className="sidebar-tags">{renderCategoryButtons()}</div>
-
-                  <div className="input-group mt-10">
-                    <input
-                      type="text"
-                      placeholder="Rechercher par ingrédient..."
-                      className="form-control subscribtion-input mt-4"
-                      value={searchQuery}
-                      onChange={handleSearchChange}
-                    />
-                    <button type="submit" className="custom-btn mt-25">
-                      <span className="icofont-search-1"></span>
-                    </button>
-                  </div>
+                  <div className="sidebar-tags">{renderCategoryButtons().slice(0, 4)}</div>
+                  <div className="sidebar-tags">{renderCategoryButtons().slice(4)}</div>
                 </div>
               </div>
+            </div>
+
+            <div className="input-group mb-20">
+              <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscribtion-input mt-4" value={searchQuery} onChange={handleSearchChange} />
+              <button type="submit" className="custom-btn mt-25">
+                <span className="icofont-search-1"></span>
+              </button>
             </div>
           </div>
         </section>

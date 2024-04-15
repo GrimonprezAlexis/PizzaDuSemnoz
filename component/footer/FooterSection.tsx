@@ -171,9 +171,9 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
                 <p className="copyright-text">© Seven Consulting. {currentYear} All Right Reserved</p>
               </div>
               <div className="text-center">
-                <a href="#" className="social-link">
+                <Link href="/mentions-legales" className="social-link">
                   <span className="icofont-university"></span> Mentions légales
-                </a>
+                </Link>
               </div>
             </div>
           </div>
