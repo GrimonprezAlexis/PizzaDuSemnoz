@@ -28,7 +28,7 @@ const Header2: React.FC<HeaderProp> = ({ logo, theme }) => {
             </div>
             <div className="header-right">
               <div className="header-menu d-none d-lg-block">
-                <NavigationSection />
+                <NavigationSection classStyle="nav-2" />
               </div>
               <div className="d-lg-none dr-navbar-mobile-sign side-toggle">
                 <div className="dr-navbar-sign menu-tab" onClick={openSidebar}>
