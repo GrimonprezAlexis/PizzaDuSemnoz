@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const ScheduleBlock = () => {
   return (
-    <div className="avail-inner">
+    <div className="avail-inner" data-aos="fade-up" data-aos-duration="1000">
       <div className="available-note">
         <div className="note-head">
           <h2 className="sm-title mb-0">Horaire d'ouverture</h2>

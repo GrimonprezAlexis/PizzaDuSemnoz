@@ -16,7 +16,7 @@ import {
   allBoissons,
 } from '@/data/Data';
 
-import PizzaTable, { Pizza } from './PizzaTable';
+import PizzaTable, { Pizza, ViewMode, isTableViewMode } from './PizzaTable';
 import BoissonTable from './BoissonTable';
 import CategoryButton from './CategoryButton';
 
@@ -25,6 +25,12 @@ interface MenuProps {
   showMoreBtn: boolean;
   endIndex: number;
 }
+
+export enum ViewCategory {
+  BOISSONS = 'boissons',
+  PIZZAS = 'pizzas',
+}
+
 const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => {
   const [selectedCategory, setSelectedCategory] = useState<PizzaCategory>(PizzaCategory.ALL);
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -83,7 +89,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
       <div className="row menu-product-title">
         <h3>{title}</h3>
       </div>
-      <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} />
+      <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} viewMode={viewMode} />
       <hr></hr>
     </>
   );
@@ -114,7 +120,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
         <div className={`row menu-product-title bg-${getTitleBackgroundColor(category)}`} data-aos="zoom-in">
           <h3>{PizzaTitle[category as keyof typeof PizzaCategory]}</h3>
         </div>
-        <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} />
+        <PizzaTable pizzas={pizzas} highlightedWord={completeWordMatch} viewMode={viewMode} />
         <hr />
       </div>
     ));
@@ -126,6 +132,13 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
         <p>Aucune pizza trouvée.</p>
       </div>
     );
+  };
+
+  const [viewMode, setViewMode] = useState(ViewMode.TABLE);
+  const [viewCategory, setViewCategory] = useState(ViewCategory.PIZZAS);
+
+  const isBoissonsViewCategory = (viewCategory: ViewCategory) => {
+    return viewCategory === ViewCategory.BOISSONS;
   };
 
   return (
@@ -144,12 +157,41 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="input-group mb-20">
-              <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscribtion-input mt-4" value={searchQuery} onChange={handleSearchChange} />
-              <button type="submit" className="custom-btn mt-25">
-                <span className="icofont-search-1"></span>
-              </button>
+          {/* ACTIONS */}
+          <div className="row mt-4">
+            <div className="col-action-pizza">
+              <div className="col-md-6 input-group mb-20 w-50 position-relative">
+                <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscription-input pl-30" value={searchQuery} onChange={handleSearchChange} />
+                <div className="input-action-icon">
+                  <i className="icofont-search-1"></i>
+                </div>
+              </div>
+
+              <div className="flex g-5">
+                {viewCategory === ViewCategory.PIZZAS && (
+                  <div className="view-mode">
+                    <button
+                      className={isTableViewMode(viewMode) ? 'subscribtion-input button-tag button-tag-active' : 'subscribtion-input button-tag button-tag-active'}
+                      onClick={() => setViewMode(isTableViewMode(viewMode) ? ViewMode.LIST : ViewMode.TABLE)}
+                    >
+                      {isTableViewMode(viewMode) ? <i className="icofont-table"></i> : <i className="icofont-list"></i>}
+                      {isTableViewMode(viewMode) ? <span>Vue Table</span> : <span>Vue Liste</span>}
+                    </button>
+                  </div>
+                )}
+
+                <div className="view-category">
+                  <button
+                    className={isBoissonsViewCategory(viewCategory) ? 'subscribtion-input button-tag' : 'subscribtion-input button-tag'}
+                    onClick={() => setViewCategory(isBoissonsViewCategory(viewCategory) ? ViewCategory.PIZZAS : ViewCategory.BOISSONS)}
+                  >
+                    {isBoissonsViewCategory(viewCategory) ? <i className="icofont-table"></i> : <i className="icofont-list"></i>}
+                    {isBoissonsViewCategory(viewCategory) ? <span>Nos Boissons</span> : <span>Nos Pizzas</span>}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -157,20 +199,23 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
         <section className="container">
           <div className="row">
             <div className="col-lg-12">
-              {selectedCategory === PizzaCategory.ALL && !filteredPizzas.length && (
-                <div className="blog-left-wrapp">
-                  {renderPizzaTable(nouveautePizzaList, PizzaTitle.NOUVEAUTE)}
-                  {renderPizzaTable(classicPizzas, PizzaTitle.CLASSIQUES)}
-                  {renderPizzaTable(incontournablesPizzaList, PizzaTitle.INCONTOURNABLES)}
-                  {renderPizzaTable(specialesPizzaList, PizzaTitle.SPECIALES)}
-                  {renderPizzaTable(pimentesPizzaList, PizzaTitle.PIMENTES)}
-                  {renderPizzaTable(pizzaDesMersList, PizzaTitle.PIZZA_DES_MERS)}
-                  {renderPizzaTable(sucreesSaleesPizzasList, PizzaTitle.SUCREES_SALEES)}
-                </div>
+              {viewCategory === ViewCategory.PIZZAS && (
+                <>
+                  {viewCategory === ViewCategory.PIZZAS && selectedCategory === PizzaCategory.ALL && !filteredPizzas.length && (
+                    <div className="blog-left-wrapp">
+                      {renderPizzaTable(nouveautePizzaList, PizzaTitle.NOUVEAUTE)}
+                      {renderPizzaTable(classicPizzas, PizzaTitle.CLASSIQUES)}
+                      {renderPizzaTable(incontournablesPizzaList, PizzaTitle.INCONTOURNABLES)}
+                      {renderPizzaTable(specialesPizzaList, PizzaTitle.SPECIALES)}
+                      {renderPizzaTable(pimentesPizzaList, PizzaTitle.PIMENTES)}
+                      {renderPizzaTable(pizzaDesMersList, PizzaTitle.PIZZA_DES_MERS)}
+                      {renderPizzaTable(sucreesSaleesPizzasList, PizzaTitle.SUCREES_SALEES)}
+                    </div>
+                  )}
+                  {filteredPizzas.length ? renderPizzaTables() : renderNoPizzaFound()}
+                </>
               )}
-
-              {filteredPizzas.length ? renderPizzaTables() : renderNoPizzaFound()}
-              <BoissonTable boissons={allBoissons} title={'Les boissons'} />
+              {viewCategory === ViewCategory.BOISSONS && <BoissonTable boissons={allBoissons} title={'Les boissons'} />}
             </div>
           </div>
         </section>

@@ -33,6 +33,7 @@ Don't forgot your feedback or ratings.
 
 
 
+
 /* ====end CSS Variable=== */
 
 body {
@@ -1411,8 +1412,9 @@ ul.about-ul {
 }
 
 .serv-list img {
-  height: 60px;
-  padding: 5px;
+  height: 11vh;
+  padding: 2px;
+  width: 10vh;
 }
 
 .list-des {
@@ -2113,11 +2115,6 @@ ul.about-ul li {
 .serv-list {
   display: flex;
   align-items: center;
-}
-
-.serv-list img {
-  height: 50px;
-  padding: 5px;
 }
 
 .list-des {
@@ -11828,8 +11825,8 @@ a.custom-btn-2:hover {
   color: #fff;
 }
 .button-tag-active {
-  border-color: #cc3322;
-  background-color: #cc3322;
+  border-color: indianred;
+  background-color: indianred;
   color: #fff;
 }
 
@@ -11878,34 +11875,34 @@ a.custom-btn-2:hover {
 .menu-product-title h3 {
   color: white;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat';
 }
 .bg-nouveaute h3 {
-  background-color: #cc3322;
+  background-color: indianred;
 }
 
 .bg-classiques h3 {
-  background-color: #77B255;
+  background-color: wheat;
 }
 
 .bg-incontournables h3 {
-  background-color: #cc3322;
+  background-color: indianred;
 }
 
 .bg-speciales h3 {
-  background-color: #77B255;
+  background-color: wheat;
 }
 
 .bg-pimentes h3 {
-  background-color: #cc3322;
+  background-color: indianred;
 }
 
 .bg-pizza_des_mers h3 {
-  background-color: #77B255;
+  background-color: wheat;
 }
 
 .bg-sucrees_salees h3 {
-  background-color: #cc3322; 
+  background-color: indianred; 
 }
 
 .highlight {
@@ -12021,7 +12018,7 @@ a.custom-btn-2:hover {
 
 .pizza-item {
   margin-bottom: 10px;
-  padding: 1rem;
+  padding: .5rem 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -12030,11 +12027,12 @@ a.custom-btn-2:hover {
 
 .pizza-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  animation: pulse 0.5s ease infinite;
 }
 
 .pizza-item h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15.5px;
   background-color: #f8f9fa;
   color: #6c757d;
   text-transform: uppercase;
@@ -12065,6 +12063,18 @@ a.custom-btn-2:hover {
 
 .pizza-item .prices span:last-child {
   margin-right: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .subscribtion-input {
@@ -12106,4 +12116,33 @@ a.custom-btn-2:hover {
 .customize-link:hover,
 .ok-button:hover {
   background-color: #af7a31;
+}
+
+.col-action-pizza {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.view-mode button, .view-category button{
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  color: indianred;
+}
+
+.subscription-input {
+  position: relative;
+  padding-right: 30px;
+}
+.input-action-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.g-5 {
+  gap: 5px;
 }

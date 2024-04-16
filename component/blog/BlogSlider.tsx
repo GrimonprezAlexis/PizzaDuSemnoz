@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const BlogSlider = () => {
   return (
-    <div className="product-slider mb-50" data-aos="fade-up" data-aos-duration="500">
+    <div className="product-slider mb-50" data-aos="fade-up" data-aos-duration="2000">
       <Swiper
         className="swiper productSlider"
         slidesPerView={1}

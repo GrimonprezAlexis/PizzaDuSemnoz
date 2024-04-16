@@ -10,7 +10,7 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
       <div className={`about about-3 ${style} pt-30 pb-10`}>
         <div className="container">
           <div className="flex-between-align-start">
-            <div className="col-md-6 col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1000">
+            <div className="col-md-6 col-xl-4 col-lg-5">
               <ScheduleBlock />
             </div>
             <div className="col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
@@ -27,19 +27,19 @@ const AboutSection3: React.FC<AboutProp> = ({ style }) => {
                   <ul className="about-ul">
                     <li>
                       <div className="serv-list">
-                        <img src="img/icon/3-8.png" alt="Image not found" />
+                        <img src="img/icon/v2/1.png" alt="Image not found" />
                         <div className="list-des">
                           <h4 className="list-title">Format 50cm</h4>
-                          <p>Avis à tous les gourmands, format 50 cm pour toutes les pizzas de notre carte !</p>
+                          {/* <p>Avis à tous les gourmands, format 50 cm pour toutes les pizzas de notre carte !</p> */}
                         </div>
                       </div>
                     </li>
                     <li>
                       <div className="serv-list">
-                        <img src="img/icon/3-7.png" alt="Image not found" />
+                        <img src="img/icon/v2/2.png" alt="Image not found" />
                         <div className="list-des">
                           <h4 className="list-title">Saveurs Authentiques</h4>
-                          <p>Inspirées des délices de la Savoie, pour un goût mémorable.</p>
+                          {/* <p>Inspirées des délices de la Savoie, pour un goût mémorable.</p> */}
                         </div>
                       </div>
                     </li>
