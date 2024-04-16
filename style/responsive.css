@@ -11,7 +11,7 @@
         height: 880px;
     }
     .hero4-title {
-        font-size: 71px;
+        font-size: 71px!important;
     }
 
     .shop-product-img.w-100 img {
@@ -148,11 +148,11 @@
     }
 
     .hero4-title {
-        font-size: 55px;
+        font-size: 55px!important;
     }
 
     .hero4-title.hero5-title {
-        font-size: 65px;
+        font-size: 65px!important;
     }
 
     .height-955 {
@@ -359,7 +359,7 @@
     }
 
     .hero4-title {
-        font-size: 55px;
+        font-size: 55px!important;
     }
 
     .hero-sub-title {
@@ -504,6 +504,15 @@
     }
     .container.ad-reservation-container.about-page-shop-details-container {
         padding: 80px 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo-text h3 {
+        letter-spacing: 1px;
+    }
+    .footer-content-wrapper ul li a  {
+        font-size: 16px;
     }
 }
 
@@ -1287,7 +1296,7 @@
 
 @media screen and (max-width:767px) {
     .hero4-title {
-        font-size: 52px;
+        font-size: 52px!important;
     }
 
     .cb-category-inner-text.pl-50 {
@@ -1599,7 +1608,7 @@
     }
 
     .hero4-title {
-        font-size: 46px;
+        font-size: 46px!important;
     }
 
     .smpadright40 .footer-content-wrapper {
@@ -1794,7 +1803,7 @@
   
 @media screen and (max-width:400px) {
     .hero4-title {
-        font-size: 36px;
+        font-size: 36px!important;
     }
 
     .cb-offer-cta-content {

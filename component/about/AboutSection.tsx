@@ -39,7 +39,7 @@ const AboutSection = () => {
 
                   <div className="service-button-wrap mt-40">
                     <Link href="/menu" className="custom-btn kf-pulse-red">
-                      Voir les Pizzas
+                      Nos Pizzas
                     </Link>
                   </div>
                 </div>

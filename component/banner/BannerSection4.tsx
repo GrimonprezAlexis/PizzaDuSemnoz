@@ -43,7 +43,7 @@ const BannerSection4 = () => {
                           </div>
                           <div className="cb-slider-buttons d-flex align-items-center justify-content-center justify-content-md-start mt-50">
                             <a className="cb-slider-button" href="/menu">
-                              Voir les Pizzas
+                              Nos Pizzas
                             </a>
                             <a className="cb-slider-button second-button" href="tel:+0664541850">
                               06 64 54 18 50
