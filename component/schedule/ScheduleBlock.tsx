@@ -33,7 +33,7 @@ const ScheduleBlock = () => {
 
         <div className="note-footer">
           <h4 className="note-footer-text">Commandez maintenant</h4>
-          <Link className="note-footer-text kf-pulse-number" href="tel:+0664541850">
+          <Link className="note-footer-text kf-pulse-number" href="tel:+33664541850">
             <i className="icofont-phone"></i> 06 64 54 18 50
           </Link>
         </div>

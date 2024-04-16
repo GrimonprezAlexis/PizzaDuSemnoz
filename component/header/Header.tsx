@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
                 <Link href="/">
                   <h3>Pizza Du Semnoz</h3>
                 </Link>
-                <Link className="kf-pulse-number logo-text-red" href="tel:+0664541850">
+                <Link className="kf-pulse-number logo-text-red" href="tel:+33664541850">
                   <i className="icofont-phone"></i> 06 64 54 18 50
                 </Link>
               </div>

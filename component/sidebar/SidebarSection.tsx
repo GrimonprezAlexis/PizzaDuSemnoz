@@ -24,7 +24,7 @@ const SidebarSection: React.FC<SidebarProps> = ({ logo }) => {
                     <Link href="/">
                       <h3>Pizza Du Semnoz</h3>
                     </Link>
-                    <Link className="logo-text-red" href="tel:+0664541850">
+                    <Link className="logo-text-red" href="tel:+33664541850">
                       <i className="icofont-phone"></i> 06 64 54 18 50
                     </Link>
                   </div>
@@ -56,7 +56,7 @@ const SidebarSection: React.FC<SidebarProps> = ({ logo }) => {
                 18 Av. d'Aix-les-Bains, <br></br>74600 Seynod, France
               </span>
             </span>
-            <a className="" href="tel:+0664541850">
+            <a className="" href="tel:+33664541850">
               <i className="icofont-phone"></i> 06 64 54 18 50
             </a>
           </div>

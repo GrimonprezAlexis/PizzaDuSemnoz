@@ -45,7 +45,7 @@ const BannerSection4 = () => {
                             <a className="cb-slider-button" href="/menu">
                               Nos Pizzas
                             </a>
-                            <a className="cb-slider-button second-button" href="tel:+0664541850">
+                            <a className="cb-slider-button second-button" href="tel:+33664541850">
                               06 64 54 18 50
                             </a>
                           </div>
