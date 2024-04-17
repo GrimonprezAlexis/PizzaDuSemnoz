@@ -10683,10 +10683,10 @@ a.ad-menu-img-container {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+}
 
-  img {
-    width: 150px;
-  }
+.ad-menu-qr-code-container img {
+	    width: 150px;
 }
 
 .ad-menu-qr-code-container p {
