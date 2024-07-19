@@ -1,0 +1,9 @@
+.alertBanner {
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background: wheat;
+    color: black;
+}

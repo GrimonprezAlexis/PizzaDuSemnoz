@@ -1,5 +1,6 @@
 'use client';
 
+import Alert from '@/component/alert/Alert';
 import Header2 from '@/component/header/Header2';
 import HomeMain5 from '@/component/main/HomeMain5';
 import SearchModal from '@/component/modal/SearchModal';

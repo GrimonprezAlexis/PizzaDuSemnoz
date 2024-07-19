@@ -4,6 +4,7 @@ import NavigationSection from '../navigation/NavigationSection';
 import { useCafeuContext } from '@/context/CafeuContext';
 import Link from 'next/link';
 import DropdownCartSection from '../cart/DropdownCartSection';
+import Alert from '../alert/Alert';
 interface HeaderProp {
   logo: string;
   theme: string;
@@ -13,6 +14,7 @@ const Header2: React.FC<HeaderProp> = ({ logo, theme }) => {
 
   return (
     <header>
+      <Alert />
       <div className={`header header-2`}>
         <div className="container">
           <div className="header-inner second-home-nav">

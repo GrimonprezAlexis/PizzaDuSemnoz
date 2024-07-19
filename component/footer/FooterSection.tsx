@@ -39,7 +39,7 @@ const FooterSection: React.FC<FooterProp> = ({ style }) => {
                     <span className="icofont-ui-call"> </span>
                     <div className="address-inner">
                       <p className="address-info">
-                        <a href="tel:+123456679123">+33 6 64 54 18 50</a>
+                        <a href="tel:+33664541850">+33 6 64 54 18 50</a>
                       </p>
                     </div>
                   </li>
