@@ -6,9 +6,9 @@ const Alert: React.FC = () => {
     <div className="alertBanner">
       <div className="py-2">
         <strong className="font-bold">Attention !</strong>
-        <p className="mt-2">
+        <span className="block sm:inline ml-2">
           Le restaurant sera fermé du <strong>lundi 22 au vendredi 26 juillet</strong> et réouvrira le <strong>vendredi 26 juillet à 12h</strong>.
-        </p>
+        </span>
       </div>
     </div>
   );
