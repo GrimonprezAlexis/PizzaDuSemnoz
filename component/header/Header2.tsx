@@ -14,7 +14,7 @@ const Header2: React.FC<HeaderProp> = ({ logo, theme }) => {
 
   return (
     <header>
-      <Alert />
+      {/* <Alert /> */}
       <div className={`header header-2`}>
         <div className="container">
           <div className="header-inner second-home-nav">
