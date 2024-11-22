@@ -1,12 +1,19 @@
 import React from 'react';
 import './alert.css';
+import Link from 'next/link';
 
 const Alert: React.FC = () => {
   return (
     <div className="alertBanner">
       <div className="py-2">
         <span className="block sm:inline ml-2">
-          Notre restaurant sera fermé du <strong>lundi 22 au jeudi 25 juillet inclus</strong> et réouvrira le <strong>vendredi 26 juillet à 12h</strong>.
+          Découvrez notre nouveauté :{' '}
+          <strong>
+            <Link href="/menu" className="kf-pulse-red">
+              La Yaute et Tartidiots
+            </Link>
+          </strong>{' '}
+          débarquent au menu 🍕🎉!" .
         </span>
       </div>
     </div>

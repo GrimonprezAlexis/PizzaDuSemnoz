@@ -1090,6 +1090,24 @@ enum PizzaTitle {
 
 const nouveautePizzaList = [
   {
+    name: 'La Yaute 🗞',
+    ingredients: 'Sauce crème/basilic, oignons confits, diots, raclette',
+    prices: ['13.00€', '15.50€', '30.00€'],
+    category: PizzaCategory.NOUVEAUTE,
+  },
+  {
+    name: 'Tartidiots 🗞',
+    ingredients: 'Sauce crème fraîche, diots, pomme de terre, oignons, reblochon, fromage',
+    prices: ['13.00€', '15.50€', '30.00€'],
+    category: PizzaCategory.NOUVEAUTE,
+  },
+  {
+    name: 'Reine di Bufala',
+    ingredients: 'Sauce tomate, mozzarella di Bufala, jambon blanc, champignons frais, tomates fraîches, oignons, filet de crème, persillade',
+    prices: ['13.00€', '15.50€', '30.00€'],
+    category: PizzaCategory.CLASSIQUES,
+  },
+  {
     name: 'Beaujus',
     ingredients: 'Sauce crème, mozzarella, champignons, lardons, tomme des Bauges, oeuf',
     prices: ['12.50€', '14.50€', '28.00€'],

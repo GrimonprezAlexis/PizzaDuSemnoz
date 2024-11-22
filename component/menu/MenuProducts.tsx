@@ -177,7 +177,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
                       onClick={() => setViewMode(isTableViewMode(viewMode) ? ViewMode.LIST : ViewMode.TABLE)}
                     >
                       {isTableViewMode(viewMode) ? <i className="icofont-table"></i> : <i className="icofont-list"></i>}
-                      {isTableViewMode(viewMode) ? <span>Vue Table</span> : <span>Vue Liste</span>}
+                      {isTableViewMode(viewMode) ? <span>Vue Liste</span> : <span>Vue Table</span>}
                     </button>
                   </div>
                 )}
@@ -188,7 +188,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
                     onClick={() => setViewCategory(isBoissonsViewCategory(viewCategory) ? ViewCategory.PIZZAS : ViewCategory.BOISSONS)}
                   >
                     {isBoissonsViewCategory(viewCategory) ? <i className="icofont-table"></i> : <i className="icofont-list"></i>}
-                    {isBoissonsViewCategory(viewCategory) ? <span>Nos Boissons</span> : <span>Nos Pizzas</span>}
+                    {isBoissonsViewCategory(viewCategory) ? <span>Nos Pizzas</span> : <span>Nos Boissons</span>}
                   </button>
                 </div>
               </div>
