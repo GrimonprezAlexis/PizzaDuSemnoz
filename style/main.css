@@ -311,7 +311,7 @@ img {
 }
 
 .header-2 {
-  margin-top: 2rem;
+  margin-top: 0rem;
   padding: .6rem 0;
 }
 
@@ -12136,6 +12136,7 @@ a.custom-btn-2:hover {
 .subscription-input {
   position: relative;
   padding-right: 30px;
+  min-width: 300px!important;
 }
 .input-action-icon {
   position: absolute;
