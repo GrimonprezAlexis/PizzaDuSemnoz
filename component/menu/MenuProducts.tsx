@@ -46,10 +46,16 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
   };
 
   const filteredPizzas = useMemo(() => {
+    const terms = searchQuery
+      .toLowerCase()
+      .split(' ')
+      .filter((term) => term.length > 1);
+
     return allPizzaList.filter((pizza) => {
       const categoryMatch = selectedCategory === PizzaCategory.ALL || pizza.category === selectedCategory;
-      const ingredientMatch = !searchQuery || searchQuery.length <= 3 || pizza.ingredients.toLowerCase().includes(searchQuery.toLowerCase());
-      return categoryMatch && ingredientMatch;
+      const searchFields = `${pizza.name} ${pizza.ingredients}`.toLowerCase();
+      const allTermsMatch = terms.every((term) => searchFields.includes(term));
+      return categoryMatch && (terms.length === 0 || allTermsMatch);
     });
   }, [selectedCategory, searchQuery]);
 
@@ -163,7 +169,13 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
           <div className="row mt-4">
             <div className="col-action-pizza">
               <div className="col-md-6 input-group mb-20 w-50 position-relative">
-                <input type="text" placeholder="Rechercher par ingrédient..." className="form-control subscription-input pl-30" value={searchQuery} onChange={handleSearchChange} />
+                <input
+                  type="text"
+                  placeholder="Rechercher une Pizza (ex: Poulet, Merguez ou Marguerite)."
+                  className="form-control subscription-input pl-30"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                />
                 <div className="input-action-icon">
                   <i className="icofont-search-1"></i>
                 </div>
