@@ -1090,6 +1090,12 @@ enum PizzaTitle {
 
 const nouveautePizzaList = [
   {
+    name: 'Tartidiots 🗞',
+    ingredients: 'Sauce crème fraîche, diots, pomme de terre, oignons, reblochon, fromage',
+    prices: ['13.00€', '15.50€', '30.00€'],
+    category: PizzaCategory.NOUVEAUTE,
+  },
+  {
     name: 'Reine di Bufala',
     ingredients: 'Sauce tomate, mozzarella di Bufala, jambon blanc, champignons frais, tomates fraîches, oignons, filet de crème, persillade',
     prices: ['14.00€', '16.50€', '31.00€'],
