@@ -9,7 +9,7 @@ const Alert: React.FC = () => {
         <span className="block sm:inline ml-2">
           <strong>
             <Link href="/menu" className="kf-pulse-red">
-              La Tartidiots
+              La Tartidiots et La Yaute
             </Link>
           </strong>{' '}
           débarquent au menu 🍕🎉!" .
