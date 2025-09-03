@@ -1092,13 +1092,13 @@ const nouveautePizzaList = [
   {
     name: 'La Yaute 🗞',
     ingredients: 'Sauce crème/basilic, oignons confits, diots, raclette',
-    prices: ['13.50€', '17.00€', '30.00€'],
+    prices: ['13.50€', '17.00€', '32.00€'],
     category: PizzaCategory.NOUVEAUTE,
   },
   {
     name: 'Tartidiots 🗞',
     ingredients: 'Sauce crème fraîche, diots, pomme de terre, oignons, reblochon, fromage',
-    prices: ['13.50€', '17.00€', '30.00€'],
+    prices: ['13.50€', '17.00€', '32.00€'],
     category: PizzaCategory.NOUVEAUTE,
   },
   {
